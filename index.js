@@ -42,6 +42,62 @@ document.addEventListener('DOMContentLoaded', () => {
     setupInfiniteScroll(bottomSlider, ANIMATION_SPEED_BOTTOM);
 
 });
+const allCategories = [
+    'All', 'Travel', 'Things to do', 'Beauty & Spa', 'Beauty', 'Local',
+    'Food & Drinks', 'Massage', 'Accessories', 'Goods', 'Electronics',
+    'Clothing', 'Home Goods', 'Footwear'
+];
 
+function setupAutocomplete() {
+    const searchInput = document.getElementById('searchInput');
+    const suggestionsList = document.getElementById('suggestionsList');
 
+    if (!searchInput || !suggestionsList) {
+        console.error('Unified search input or suggestions list not found.');
+        return;
+    }
 
+    searchInput.addEventListener('input', function () {
+        const inputValue = this.value.toLowerCase().trim();
+        suggestionsList.innerHTML = '';
+
+        if (inputValue.length > 0) {
+            const filteredSuggestions = allCategories.filter(category =>
+                category.toLowerCase().includes(inputValue)
+            );
+
+            if (filteredSuggestions.length > 0) {
+                filteredSuggestions.forEach(suggestion => {
+                    const suggestionElement = document.createElement('a');
+                    suggestionElement.href = '#';
+                    suggestionElement.className = 'suggestion-item d-block text-decoration-none text-dark py-2 px-3';
+                    suggestionElement.innerHTML = `<small>Suggested: <b>${suggestion}</b></small>`;
+
+                    suggestionElement.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        searchInput.value = suggestion;
+                        suggestionsList.style.display = 'none';
+                    });
+
+                    suggestionsList.appendChild(suggestionElement);
+                });
+
+                suggestionsList.style.display = 'block';
+            } else {
+                suggestionsList.style.display = 'none';
+            }
+        } else {
+            suggestionsList.style.display = 'none';
+        }
+    });
+
+    document.addEventListener('click', function (e) {
+        // Hide the list if click is outside
+        if (e.target !== searchInput && !suggestionsList.contains(e.target)) {
+            suggestionsList.style.display = 'none';
+        }
+    });
+}
+
+// Call the single setup function on load
+document.addEventListener('DOMContentLoaded', setupAutocomplete);

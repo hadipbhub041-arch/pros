@@ -17,117 +17,43 @@
 
 <body>
     <header class="container">
-        <nav class="navbar navbar-light d-lg-none" style="z-index: 1020;">
-            <div class="container-fluid py-2 d-flex px-0 justify-content-between align-items-center">
-                <a class="navbar-brand p-0" href="#">
-                    <img src="/images/Logo.webp" width="90" height="28" class="img-fluid" alt="Logo">
-                </a>
-                <button class="navbar-toggler border-0 px-0" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#mobileOffcanvas" aria-controls="mobileOffcanvas" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </nav>
 
-        <div class="container py-0 pb-1 d-lg-none text-center">
-            <form class="d-inline-block position-relative" role="search" style="width: 80%;">
-                <input type="search" class="form-control rounded-3 ps-3 pe-5 border-secondary py-1"
-                    style="font-size: 0.85rem; height: 34px;" placeholder="Search Categories">
+        <div id="unifiedHeaderRow"
+            class="py-2 py-lg-4 d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
+            <nav class="navbar navbar-light d-lg-none p-0 w-100" style="z-index: 1020;">
+                <div class="container-fluid d-flex px-0 justify-content-between align-items-center">
+                    <a class="navbar-brand p-0" href="#">
+                        <img src="/images/Logo.webp" width="90" height="28" class="img-fluid" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler border-0 px-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileOffcanvas" aria-controls="mobileOffcanvas"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+            <img src="images/Logo.webp" alt="logo" class="d-none d-lg-block" style="width: 130px; height: 40px;">
+            <form class="position-relative w-100 mt-2 mt-lg-0 ms-lg-auto me-lg-0 mx-auto" role="search" id="unifiedSearchForm"
+                style="max-width: 75%;">
+                <div class="input-group">
+                    <input class="form-control border-end-0 border rounded-end-0" type="search" id="searchInput"
+                        placeholder="Search Categories" aria-label="Search">
+                    <button class="btn btn-outline-secondary border-start-0 border rounded-start-0" type="submit"
+                        aria-label="searchbtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </button>
+                </div>
 
-                <button type="submit"
-                    class="btn position-absolute top-50 translate-middle-y end-0 me-3 p-0 border-0 bg-transparent">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#9aa0a6" class="bi bi-search"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.098zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                    </svg>
-                </button>
+                <div class="suggestions-list position-absolute w-100 mt-1 shadow-sm rounded-3 bg-white border border-secondary"
+                    id="suggestionsList" style="z-index: 1000; top: 100%; display: none;">
+                </div>
             </form>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileOffcanvas"
-                aria-labelledby="mobileOffcanvasLabel"
-                style="background-color: black; width: 75vw; max-width: 300px; height: 80%; top: 10.5%;">
-
-                <div class="offcanvas-header justify-content-start p-3 pb-0" style="padding-bottom: 0 !important;">
-                    <button type="button" class="btn-close btn-close-white m-0" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-
-                <div class="offcanvas-body p-0">
-                    <ul class="navbar-nav me-auto list-unstyled text-end">
-                        <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2">
-                            <a class="nav-link text-white active" href="#" style="padding: 1.25rem 2rem;">
-                                <span
-                                    style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">
-                                    All
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2">
-                            <a class="nav-link text-white active" href="#" style="padding: 1.25rem 2rem;">
-                                <span
-                                    style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">
-                                    Travel
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2">
-                            <a class="nav-link text-white active" href="#" style="padding: 1.25rem 2rem;">
-                                <span
-                                    style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">
-                                    Things
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2">
-                            <a class="nav-link text-white active" href="#" style="padding: 1.25rem 2rem;">
-                                <span
-                                    style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">
-                                    Beauty
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2">
-                            <a class="nav-link text-white active" href="#" style="padding: 1.25rem 2rem;">
-                                <span
-                                    style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">
-                                    beverages
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2">
-                            <a class="nav-link text-white active" href="#" style="padding: 1.25rem 2rem;">
-                                <span
-                                    style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">
-                                    massage
-                                </span>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
         </div>
-        <div class="d-none d-lg-block sticky-desktop-header">
-            <div class=" bg-white">
-                <div class="container py-4 d-flex justify-content-between align-items-center">
-                    <img src="images/Logo.webp" alt="logo" style="width: 130px; height: 40px;">
-                    <form class="d-flex" role="search" style="flex-grow: 1; max-width: 55%;">
-                        <div class="input-group">
-                            <input class="form-control border-end-0 border rounded-end-0" type="search"
-                                placeholder="Search Categories" aria-label="Search">
-                            <button class="btn btn-outline-secondary border-start-0 border rounded-start-0"
-                                type="submit" aria-label="searchbtn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-search" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+
         <nav class="bg-white d-none d-lg-block">
             <ul class="nav justify-content-center py-2">
                 <li class="nav-item px-lg-3 px-xl-4 px-md-2"><a
@@ -147,6 +73,43 @@
                 <li class="nav-item px-lg-3 px-xl-4 px-md-2"><a class="nav-link text-dark p-0" href="#">Goods</a></li>
             </ul>
         </nav>
+
+        <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileOffcanvas"
+            aria-labelledby="mobileOffcanvasLabel"
+            style="background-color: black; width: 75vw; max-width: 300px; height: 80%; top: 10.5%;">
+            <div class="offcanvas-header justify-content-start p-3 pb-0" style="padding-bottom: 0 !important;">
+                <button type="button" class="btn-close btn-close-white m-0" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <ul class="navbar-nav me-auto list-unstyled text-end">
+                    <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2"><a class="nav-link text-white active" href="#"
+                            style="padding: 1.25rem 2rem;"><span
+                                style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">All</span></a>
+                    </li>
+                    <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2"><a class="nav-link text-white active" href="#"
+                            style="padding: 1.25rem 2rem;"><span
+                                style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">Travel</span></a>
+                    </li>
+                    <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2"><a class="nav-link text-white active" href="#"
+                            style="padding: 1.25rem 2rem;"><span
+                                style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">Things</span></a>
+                    </li>
+                    <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2"><a class="nav-link text-white active" href="#"
+                            style="padding: 1.25rem 2rem;"><span
+                                style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">Beauty</span></a>
+                    </li>
+                    <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2"><a class="nav-link text-white active" href="#"
+                            style="padding: 1.25rem 2rem;"><span
+                                style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">Beverages</span></a>
+                    </li>
+                    <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2"><a class="nav-link text-white active" href="#"
+                            style="padding: 1.25rem 2rem;"><span
+                                style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">Massage</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main>
         <!-- carousel -->
@@ -321,7 +284,7 @@
             </div>
         </section>
         <!-- reviews -->
-        <section class="container py-5 border border-1 mt-5 ">
+        <section class="container py-5 mt-5 ">
             <div class="d-flex justify-content-between mb-4">
                 <h2 class="h2 fs-4 fs-md-2 fs-sm-1">Product Reviews</h2>
                 <a href="#">
@@ -944,78 +907,49 @@
                 </div>
 
                 <div id="partner-grid">
-
-                    <!-- Mobile Horizontal Scroll -->
-                    <div class="d-lg-none">
+                    <div class="">
                         <div class="horizontal-scroll-row d-flex w-100 overflow-auto">
 
                             <a href="#" class="scrolling-item-mobile flex-shrink-0">
                                 <div class="grid-card-wrapper overflow-hidden w-100 h-100">
-                                    <img src="images/p1.webp" class="partner-card-img-mobile d-block" loading="lazy">
+                                    <video class="partner-card-video-mobile d-block" autoplay muted loop playsinline
+                                        poster="images/video.mp4" loading="lazy" src="images/video.mp4"
+                                        type="video/mp4">
+                                    </video>
                                 </div>
                             </a>
 
                             <a href="#" class="scrolling-item-mobile flex-shrink-0">
                                 <div class="grid-card-wrapper overflow-hidden w-100 h-100">
-                                    <img src="images/p2.webp" class="partner-card-img-mobile d-block" loading="lazy">
+                                    <video class="partner-card-video-mobile d-block" autoplay muted loop playsinline
+                                        poster="images/video.mp4" loading="lazy" src="images/video.mp4"
+                                        type="video/mp4">
+                                    </video>
                                 </div>
                             </a>
 
                             <a href="#" class="scrolling-item-mobile flex-shrink-0">
                                 <div class="grid-card-wrapper overflow-hidden w-100 h-100">
-                                    <img src="https://placehold.co/1000x700"
-                                        class="partner-card-img-mobile d-block rounded" loading="lazy">
+                                    <video class="partner-card-video-mobile d-block" autoplay muted loop playsinline
+                                        poster="images/video.mp4" loading="lazy" src="images/video.mp4"
+                                        type="video/mp4">
+                                    </video>
                                 </div>
                             </a>
 
                             <a href="#" class="scrolling-item-mobile flex-shrink-0">
                                 <div class="grid-card-wrapper overflow-hidden w-100 h-100">
-                                    <img src="images/p4.webp" class="partner-card-img-mobile d-block" loading="lazy">
+                                    <video class="partner-card-video-mobile d-block" autoplay muted loop playsinline
+                                        poster="images/video.mp4" loading="lazy" src="images/video.mp4"
+                                        type="video/mp4">
+
+                                    </video>
                                 </div>
                             </a>
 
                         </div>
                     </div>
-
-                    <!-- Desktop 4-column Grid -->
-                    <div class="row g-4 d-none d-lg-flex">
-
-                        <div class="col-lg-3">
-                            <a href="#">
-                                <div class="grid-card-wrapper overflow-hidden w-100 h-100">
-                                    <img src="images/p1.webp" class="partner-card-img" loading="lazy">
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-3">
-                            <a href="#">
-                                <div class="grid-card-wrapper overflow-hidden w-100 h-100">
-                                    <img src="images/p2.webp" class="partner-card-img" loading="lazy">
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-3">
-                            <a href="#">
-                                <div class="grid-card-wrapper overflow-hidden w-100 h-100">
-                                    <img src="https://placehold.co/1000x700" class="partner-card-img" loading="lazy">
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-3">
-                            <a href="#">
-                                <div class="grid-card-wrapper overflow-hidden w-100 h-100">
-                                    <img src="images/p4.webp" class="partner-card-img" loading="lazy">
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-
                 </div>
-
             </div>
         </section>
         <!-- reviews -->
