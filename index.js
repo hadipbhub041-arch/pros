@@ -92,12 +92,10 @@ function setupAutocomplete() {
     });
 
     document.addEventListener('click', function (e) {
-        // Hide the list if click is outside
         if (e.target !== searchInput && !suggestionsList.contains(e.target)) {
             suggestionsList.style.display = 'none';
         }
     });
 }
 
-// Call the single setup function on load
 document.addEventListener('DOMContentLoaded', setupAutocomplete);

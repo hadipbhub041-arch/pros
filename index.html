@@ -33,8 +33,8 @@
                 </div>
             </nav>
             <img src="images/Logo.webp" alt="logo" class="d-none d-lg-block" style="width: 130px; height: 40px;">
-            <form class="position-relative w-100 mt-2 mt-lg-0 ms-lg-auto me-lg-0 mx-auto" role="search" id="unifiedSearchForm"
-                style="max-width: 75%;">
+            <form class="position-relative w-100 mt-2 mt-lg-0 ms-lg-auto me-lg-0 mx-auto" role="search"
+                id="unifiedSearchForm" style="max-width: 50%;">
                 <div class="input-group">
                     <input class="form-control border-end-0 border rounded-end-0" type="search" id="searchInput"
                         placeholder="Search Categories" aria-label="Search">
@@ -50,6 +50,42 @@
 
                 <div class="suggestions-list position-absolute w-100 mt-1 shadow-sm rounded-3 bg-white border border-secondary"
                     id="suggestionsList" style="z-index: 1000; top: 100%; display: none;">
+                </div>
+                <div class="offcanvas offcanvas-end " tabindex="-1" id="mobileOffcanvas"
+                    aria-labelledby="mobileOffcanvasLabel"
+                    style="background-color: black; width: 75vw; max-width: 300px; height: 80%; top: 6%;">
+                    <div class="offcanvas-header justify-content-start p-3 pb-0" style="padding-bottom: 0 !important;">
+                        <button type="button" class="btn-close btn-close-white m-0" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body p-0">
+                        <ul class="navbar-nav me-auto list-unstyled text-end">
+                            <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2"><a class="nav-link text-white active"
+                                    href="#" style="padding: 1.25rem 2rem;"><span
+                                        style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">All</span></a>
+                            </li>
+                            <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2"><a class="nav-link text-white active"
+                                    href="#" style="padding: 1.25rem 2rem;"><span
+                                        style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">Travel</span></a>
+                            </li>
+                            <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2"><a class="nav-link text-white active"
+                                    href="#" style="padding: 1.25rem 2rem;"><span
+                                        style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">Things</span></a>
+                            </li>
+                            <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2"><a class="nav-link text-white active"
+                                    href="#" style="padding: 1.25rem 2rem;"><span
+                                        style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">Beauty</span></a>
+                            </li>
+                            <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2"><a class="nav-link text-white active"
+                                    href="#" style="padding: 1.25rem 2rem;"><span
+                                        style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">Beverages</span></a>
+                            </li>
+                            <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2"><a class="nav-link text-white active"
+                                    href="#" style="padding: 1.25rem 2rem;"><span
+                                        style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">Massage</span></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </form>
         </div>
@@ -73,43 +109,6 @@
                 <li class="nav-item px-lg-3 px-xl-4 px-md-2"><a class="nav-link text-dark p-0" href="#">Goods</a></li>
             </ul>
         </nav>
-
-        <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileOffcanvas"
-            aria-labelledby="mobileOffcanvasLabel"
-            style="background-color: black; width: 75vw; max-width: 300px; height: 80%; top: 10.5%;">
-            <div class="offcanvas-header justify-content-start p-3 pb-0" style="padding-bottom: 0 !important;">
-                <button type="button" class="btn-close btn-close-white m-0" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body p-0">
-                <ul class="navbar-nav me-auto list-unstyled text-end">
-                    <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2"><a class="nav-link text-white active" href="#"
-                            style="padding: 1.25rem 2rem;"><span
-                                style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">All</span></a>
-                    </li>
-                    <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2"><a class="nav-link text-white active" href="#"
-                            style="padding: 1.25rem 2rem;"><span
-                                style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">Travel</span></a>
-                    </li>
-                    <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2"><a class="nav-link text-white active" href="#"
-                            style="padding: 1.25rem 2rem;"><span
-                                style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">Things</span></a>
-                    </li>
-                    <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2"><a class="nav-link text-white active" href="#"
-                            style="padding: 1.25rem 2rem;"><span
-                                style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">Beauty</span></a>
-                    </li>
-                    <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2"><a class="nav-link text-white active" href="#"
-                            style="padding: 1.25rem 2rem;"><span
-                                style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">Beverages</span></a>
-                    </li>
-                    <li class="nav-item py-2 fs-3 fw-medium pe-4 fs-2"><a class="nav-link text-white active" href="#"
-                            style="padding: 1.25rem 2rem;"><span
-                                style="display: inline-block; border-bottom: 1px solid rgba(255, 255, 255, 0.582);">Massage</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </header>
     <main>
         <!-- carousel -->
@@ -153,7 +152,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid py-4 d-none d-lg-block">
+            <div class="container-fluid py-4 d-none d-lg-block overflow-hidden gx-0">
                 <div class="row g-2">
                     <div class="col-lg-5">
                         <a href="#"> <img src="images/Rectangle 9.webp"
@@ -166,7 +165,7 @@
                                 alt="Vertical Feature"></a>
                     </div>
                     <div class="col-lg-4">
-                        <div class="row g-3">
+                        <div class="row g-2">
                             <div class="col-12">
                                 <a href="#"> <img src="images/Rectangle 11.webp"
                                         class="d-block carousel-image w-100 desktop-short-image" loading="lazy"
@@ -183,341 +182,398 @@
             </div>
         </section>
         <!-- popular  stores -->
-        <section class="container py-3 logo-slider overflow-hidden position-relative mt-5">
-            <div class="">
-                <h2 class="text-center text-secondary fw-normal mb-5">
-                    Trusted by Leading Innovators
+        <section>
+            <div class="container py-3">
+                <h2 class="fw-semibold mb-5">
+                    Popular stores
                 </h2>
-                <div class="logo-slider-wrapper overflow-hidden position-relative">
-                    <div class="logo-slider-track d-flex">
+                <div class="logo-slider overflow-hidden position-relative mt-5">
+                    <div class="logo-slider-wrapper overflow-hidden position-relative">
+                        <div class="logo-slider-track d-flex">
 
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card1.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="https://placehold.co/1000x700" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card3.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card5.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card6.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card3.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card1.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card7.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card3.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="https://placehold.co/1000x700" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card1.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card3.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card1.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card1.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card1.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card6.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card1.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card1.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card5.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card5.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card1.webp" alt="Store Logo"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded"><img
-                                    src="images/card2.webp" alt="Store Logo"></div>
-                        </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="https://placehold.co/1000x700" alt="Store Logo">
+                                </div>
+                            </a> <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="https://placehold.co/1000x700" alt="Store Logo">
+                                </div>
+                            </a> <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="https://placehold.co/1000x700" alt="Store Logo">
+                                </div>
+                            </a> <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="https://placehold.co/1000x700" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card3.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card5.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card6.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card3.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card7.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card3.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="https://placehold.co/1000x700" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card3.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card6.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card5.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card5.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-item justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card2.webp" alt="Store Logo">
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- reviews -->
-        <section class="container py-5 mt-5 ">
-            <div class="d-flex justify-content-between mb-4">
-                <h2 class="h2 fs-4 fs-md-2 fs-sm-1">Product Reviews</h2>
+        <section class="container py-5 mt-5">
+            <div class="d-flex justify-content-between mb-3">
+                <h2 class="h2 fs-4 fs-md-2 fs-sm-1 text-dark fw-semibold">Product Reviews</h2>
                 <a href="#">
-                    <button class="btn btn-dark btn-sm">
-                        See All <i class="fa-solid fa-arrow-right"></i>
+                    <button class="btn btn-dark btn-sm px-2 rounded-2">
+                        See All <i class="px-1 fa-solid fa-arrow-right"></i>
                     </button>
                 </a>
             </div>
-            <div class="reviews-wrapper rounded overflow-hidden p-0">
-                <div class="review-card p-3 px-3 px-lg-1">
-                    <div class="row align-items-center gx-0">
-                        <div class="col-md-2 me-3 col-sm-12 mb-3 mb-md-0 d-flex justify-content-center p-2">
-                            <div class="image-fixed-size">
-                                <a href=""> <img src="/images/r1.webp" class="review-img" alt="img"></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12  px-md-4">
-                            <a href="#" class="text-decoration-none text-dark">
-                                <p class="fw-bold mb-2">Bill Board</p>
-                            </a>
 
-                            <div class="review-text-container">
-                                <p class="text-muted review-desc text-truncate-3-lines d-none d-md-block">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Etiam eu turpis molestie, dictum es Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Minima a eveniet odio, nemo dignissimos necessitatibus suscipit
-                                    saepe illo reprehenderit fugit. Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Corporis, magni eveniet maiores officiis commodi error porro. Ipsam earum,
-                                    laudantium consequuntur eligendi voluptatum voluptate doloremque modi officiis fuga,
-                                    dicta tenetur suscipit natus dignissimos quo est vitae dolor? Harum ex, ratione
-                                    dolores exercitationem quisquam similique, distinctio eligendi dolorem assumenda
-                                    quibusdam minus soluta! lorem
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 d-none d-md-flex flex-column align-items-center">
-                            <div class="d-flex justify-content-center align-items-center mb-3">
-                                <h3 class="fw-bold mb-0 me-2">5.0</h3>
-                                <span style="color:#FFD700; font-size:28px;">★</span>
-                            </div>
-                            <div class="rating-wrapper d-flex flex-column gap-2 w-100">
-                                <div class="rating-row d-flex align-items-center gap-2">
-                                    <span class="star-icon filled"><span class="text-dark small me-1">5.0</span>★</span>
-                                    <div class="rating-bar flex-grow-1 rounded overflow-hidden">
-                                        <div class="rating-fill h-100 bg-black" style="width: 80%;"></div>
-                                    </div>
-                                </div>
-                                <div class="rating-row d-flex align-items-center gap-2">
-                                    <span class="star-icon filled"><span class="text-dark small me-1">4.0</span>★</span>
-                                    <div class="rating-bar flex-grow-1 rounded overflow-hidden">
-                                        <div class="rating-fill h-100 bg-black" style="width: 60%;"></div>
-                                    </div>
-                                </div>
-                                <div class="rating-row d-flex align-items-center gap-2">
-                                    <span class="star-icon filled"><span class="text-dark small me-1">3.0</span>★</span>
-                                    <div class="rating-bar flex-grow-1 rounded overflow-hidden">
-                                        <div class="rating-fill h-100 bg-black" style="width: 40%;"></div>
-                                    </div>
-                                </div>
-                                <div class="rating-row d-flex align-items-center gap-2">
-                                    <span class="star-icon"><span class="text-dark small me-1">2.0</span>★</span>
-                                    <div class="rating-bar flex-grow-1 rounded overflow-hidden">
-                                        <div class="rating-fill h-100 bg-black" style="width: 20%;"></div>
-                                    </div>
-                                </div>
-                                <div class="rating-row d-flex align-items-center gap-2">
-                                    <span class="star-icon"><span class="text-dark small me-1">1.0</span>★</span>
-                                    <div class="rating-bar flex-grow-1 rounded overflow-hidden">
-                                        <div class="rating-fill h-100 bg-black" style="width: 10%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="container py-4 overflow-hidden px-0">
+                <div class="reviews-wrapper overflow-hidden">
 
-                    <div class="details-toggle-wrapper border-top text-center text-dark d-md-block d-none px-md-4">
-                        <span class="details-toggle text-dark fw-semibold" data-bs-toggle="collapse"
-                            data-bs-target="#detailsContentUnique">
-                            Details
-                        </span>
-                    </div>
-                    <div class="collapse  px-md-4" id="detailsContentUnique">
-                        <p class="text-secondary">More details about the product… lorem200</p>
-                    </div>
-                </div>
-
-                <div class="review-card p-3 px-3 px-lg-1">
-                    <div class="row align-items-center gx-0">
-                        <div class="col-md-2 me-3 col-sm-12 mb-3 mb-md-0 d-flex justify-content-center p-2">
-                            <div class="image-fixed-size">
-                                <img src="images/r1.webp" class="review-img" alt="img">
+                    <div class="review-card p-3 p-lg-4 px-lg-5">
+                        <div class="row align-items-center gx-0 gx-md-4">
+                            <div class="col-md-auto col-12 mb-3 mb-md-0 d-flex justify-content-center">
+                                <div class="image-fixed-size">
+                                    <a href="#">
+                                        <img src="images/r1.webp" class="review-img" alt="Product Review">
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12  px-md-4">
-                            <p class="fw-bold mb-2">Bill Board</p>
-                            <div class="review-text-container">
-                                <p class="text-muted review-desc text-truncate-3-lines d-none d-md-block">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Etiam eu turpis molestie, dictum est a, mattis tellus...
-                                </p>
+
+                            <div class="col-md col-12 px-md-4">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <p class="fw-bold mb-2">Bill Board</p>
+                                </a>
+                                <div class="review-text-container d-none d-md-block">
+                                    <p class="text-muted review-desc text-truncate-3-lines mb-0">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                                        molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
+                                        accumsan...
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-none d-md-flex flex-column align-items-center ps-4">
+                                <div class="rating-wrapper d-flex flex-column gap-2 w-100">
+                                    <div class="rating-row d-flex align-items-center gap-2">
+                                        <span class="star-icon filled"><span
+                                                class="text-dark small me-1">5.0</span>★</span>
+                                        <div class="rating-bar flex-grow-1 rounded overflow-hidden">
+                                            <div class="rating-fill h-100 bg-black" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-row d-flex align-items-center gap-2">
+                                        <span class="star-icon filled"><span
+                                                class="text-dark small me-1">4.0</span>★</span>
+                                        <div class="rating-bar flex-grow-1 rounded overflow-hidden">
+                                            <div class="rating-fill h-100 bg-black" style="width: 70%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-row d-flex align-items-center gap-2">
+                                        <span class="star-icon filled"><span
+                                                class="text-dark small me-1">3.0</span>★</span>
+                                        <div class="rating-bar flex-grow-1 rounded overflow-hidden">
+                                            <div class="rating-fill h-100 bg-black" style="width: 40%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-row d-flex align-items-center gap-2">
+                                        <span class="star-icon filled"><span
+                                                class="text-dark small me-1">2.0</span>★</span>
+                                        <div class="rating-bar flex-grow-1 rounded overflow-hidden">
+                                            <div class="rating-fill h-100 bg-black" style="width: 30%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-row d-flex align-items-center gap-2">
+                                        <span class="star-icon filled"><span
+                                                class="text-dark small me-1">1.0</span>★</span>
+                                        <div class="rating-bar flex-grow-1 rounded overflow-hidden">
+                                            <div class="rating-fill h-100 bg-black" style="width: 10%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-md-3 d-none d-md-flex flex-column align-items-center">
-                            <div class="d-flex justify-content-center align-items-center mb-3">
-                                <h3 class="fw-bold mb-0 me-2">5.0</h3>
-                                <span style="color:#FFD700; font-size:28px;">★</span>
+                        <div class="details-toggle-wrapper border-top text-center d-none d-md-block mt-3 w-50">
+                            <span class="details-toggle text-dark fw-semibold small" data-bs-toggle="collapse"
+                                data-bs-target="#detailsContent1">
+                                Details ▾
+                            </span>
+                        </div>
+
+                        <div class="collapse px-md-4" id="detailsContent1">
+                            <p class="text-secondary small mt-3">Verified Purchase: This product exceeded expectations
+                                in durability and design...</p>
+                        </div>
+                    </div>
+                    <div class="review-card p-3 p-lg-4 px-lg-5">
+                        <div class="row align-items-center gx-0 gx-md-4">
+                            <div class="col-md-auto col-12 mb-3 mb-md-0 d-flex justify-content-center">
+                                <div class="image-fixed-size">
+                                    <a href="#">
+                                        <img src="images/r1.webp" class="review-img" alt="Product Review">
+                                    </a>
+                                </div>
                             </div>
-                            <div class="rating-wrapper d-flex flex-column gap-2 w-100">
-                                <div class="rating-row d-flex align-items-center gap-2">
-                                    <span class="star-icon filled"><span class="text-dark small me-1">5.0</span>★</span>
-                                    <div class="rating-bar flex-grow-1 rounded overflow-hidden">
-                                        <div class="rating-fill h-100 bg-black" style="width: 80%;"></div>
-                                    </div>
+
+                            <div class="col-md col-12 px-md-4">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <p class="fw-bold mb-2">Bill Board</p>
+                                </a>
+                                <div class="review-text-container d-none d-md-block">
+                                    <p class="text-muted review-desc text-truncate-3-lines mb-0">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                                        molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
+                                        accumsan...
+                                    </p>
                                 </div>
-                                <div class="rating-row d-flex align-items-center gap-2">
-                                    <span class="star-icon filled"><span class="text-dark small me-1">4.0</span>★</span>
-                                    <div class="rating-bar flex-grow-1 rounded overflow-hidden">
-                                        <div class="rating-fill h-100 bg-black" style="width: 60%;"></div>
+                            </div>
+
+                            <div class="col-md-3 d-none d-md-flex flex-column align-items-center ps-4">
+                                <div class="rating-wrapper d-flex flex-column gap-2 w-100">
+                                    <div class="rating-row d-flex align-items-center gap-2">
+                                        <span class="star-icon filled"><span
+                                                class="text-dark small me-1">5.0</span>★</span>
+                                        <div class="rating-bar flex-grow-1 rounded overflow-hidden">
+                                            <div class="rating-fill h-100 bg-black" style="width: 80%;"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="rating-row d-flex align-items-center gap-2">
-                                    <span class="star-icon filled"><span class="text-dark small me-1">3.0</span>★</span>
-                                    <div class="rating-bar flex-grow-1 rounded overflow-hidden">
-                                        <div class="rating-fill h-100 bg-black" style="width: 40%;"></div>
+                                    <div class="rating-row d-flex align-items-center gap-2">
+                                        <span class="star-icon filled"><span
+                                                class="text-dark small me-1">4.0</span>★</span>
+                                        <div class="rating-bar flex-grow-1 rounded overflow-hidden">
+                                            <div class="rating-fill h-100 bg-black" style="width: 70%;"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="rating-row d-flex align-items-center gap-2">
-                                    <span class="star-icon"><span class="text-dark small me-1">2.0</span>★</span>
-                                    <div class="rating-bar flex-grow-1 rounded overflow-hidden">
-                                        <div class="rating-fill h-100 bg-black" style="width: 20%;"></div>
+                                    <div class="rating-row d-flex align-items-center gap-2">
+                                        <span class="star-icon filled"><span
+                                                class="text-dark small me-1">3.0</span>★</span>
+                                        <div class="rating-bar flex-grow-1 rounded overflow-hidden">
+                                            <div class="rating-fill h-100 bg-black" style="width: 40%;"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="rating-row d-flex align-items-center gap-2">
-                                    <span class="star-icon"><span class="text-dark small me-1">1.0</span>★</span>
-                                    <div class="rating-bar flex-grow-1 rounded overflow-hidden">
-                                        <div class="rating-fill h-100 bg-black" style="width: 10%;"></div>
+                                    <div class="rating-row d-flex align-items-center gap-2">
+                                        <span class="star-icon filled"><span
+                                                class="text-dark small me-1">2.0</span>★</span>
+                                        <div class="rating-bar flex-grow-1 rounded overflow-hidden">
+                                            <div class="rating-fill h-100 bg-black" style="width: 30%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-row d-flex align-items-center gap-2">
+                                        <span class="star-icon filled"><span
+                                                class="text-dark small me-1">1.0</span>★</span>
+                                        <div class="rating-bar flex-grow-1 rounded overflow-hidden">
+                                            <div class="rating-fill h-100 bg-black" style="width: 10%;"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div
-                        class="details-toggle-wrapper border-top text-center text-dark d-md-block d-none  px-md-4 mt-2">
-                        <span class="details-toggle text-dark fw-semibold" data-bs-toggle="collapse"
-                            data-bs-target="#detailsContentUnique1">
-                            Details
-                        </span>
-                    </div>
-                    <div class="collapse  px-md-4" id="detailsContentUnique1">
-                        <p class="text-secondary">More details about the product…</p>
-                    </div>
-                </div>
-
-                <div class="review-card p-3 px-3 px-lg-1 border-bottom-0">
-                    <div class="row align-items-center gx-0">
-                        <div class="col-md-2 me-3 col-sm-12 mb-3 mb-md-0 d-flex justify-content-center p-2">
-                            <div class="image-fixed-size">
-                                <img src="/images/r1.webp" class="review-img" alt="img">
-                            </div>
+                        <div class="details-toggle-wrapper border-top text-center d-none d-md-block mt-3 w-50">
+                            <span class="details-toggle text-dark fw-semibold small" data-bs-toggle="collapse"
+                                data-bs-target="#detailsContent">
+                                Details ▾
+                            </span>
                         </div>
 
-                        <div class="col-md-6 col-sm-12  px-md-4">
-                            <p class="fw-bold mb-2">Bill Board</p>
-                            <div class="review-text-container">
-                                <p class="text-muted review-desc text-truncate-2-lines d-none d-md-block">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Etiam eu turpis molestie, dictum est a, mattis tellus... Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Debitis eius itaque vitae incidunt numquam iste,
-                                    nulla,
-                                    placeat suscipit perspiciatis aspernatur neque, iure inventore molestias rem. Ea
-                                    doloremque unde quidem! Vero tempora aliquid repellendus ea enim necessitatibus rem!
-                                    Sunt sit, eligendi animi est sed iure, illo, ut dolores optio reiciendis architecto
-                                    voluptas voluptates velit? Eius distinctio laudantium praesentium doloribus dolorum
-                                    ipsum incidunt odit rerum ut nulla blanditiis atque, quae laboriosam error! Qui a
-                                    quidem
-                                    temporibus repellendus necessitatibus illo cumque harum consectetur dolore tempora
-                                    inventore nihil praesentium asperiores vel id eum ducimus, perferendis sequi, neque
-                                    aut
-                                    iure architecto. Dolorem laudantium cum labore?
-                                </p>
-                            </div>
+                        <div class="collapse px-md-4" id="detailsContent">
+                            <p class="text-secondary small mt-3">Verified Purchase: This product exceeded expectations
+                                in durability and design...</p>
                         </div>
-                        <div class="col-md-3 d-none d-md-flex flex-column align-items-center">
-                            <div class="d-flex justify-content-center align-items-center mb-3">
-                                <h3 class="fw-bold mb-0 me-2">5.0</h3>
-                                <span style="color:#FFD700; font-size:28px;">★</span>
+                    </div>
+                    <div class="review-card p-3 p-lg-4 px-lg-5">
+                        <div class="row align-items-center gx-0 gx-md-4">
+                            <div class="col-md-auto col-12 mb-3 mb-md-0 d-flex justify-content-center">
+                                <div class="image-fixed-size">
+                                    <a href="#">
+                                        <img src="images/r1.webp" class="review-img" alt="Product Review">
+                                    </a>
+                                </div>
                             </div>
-                            <div class="rating-wrapper d-flex flex-column gap-2 w-100">
-                                <div class="rating-row d-flex align-items-center gap-2">
-                                    <span class="star-icon filled"><span class="text-dark small me-1">5.0</span>★</span>
-                                    <div class="rating-bar flex-grow-1 rounded overflow-hidden">
-                                        <div class="rating-fill h-100 bg-black" style="width: 80%;"></div>
-                                    </div>
+
+                            <div class="col-md col-12 px-md-4">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <p class="fw-bold mb-2">Bill Board</p>
+                                </a>
+                                <div class="review-text-container d-none d-md-block">
+                                    <p class="text-muted review-desc text-truncate-3-lines mb-0">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                                        molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
+                                        accumsan...
+                                    </p>
                                 </div>
-                                <div class="rating-row d-flex align-items-center gap-2">
-                                    <span class="star-icon filled"><span class="text-dark small me-1">4.0</span>★</span>
-                                    <div class="rating-bar flex-grow-1 rounded overflow-hidden">
-                                        <div class="rating-fill h-100 bg-black" style="width: 60%;"></div>
+                            </div>
+
+                            <div class="col-md-3 d-none d-md-flex flex-column align-items-center ps-4">
+                                <div class="rating-wrapper d-flex flex-column gap-2 w-100">
+                                    <div class="rating-row d-flex align-items-center gap-2">
+                                        <span class="star-icon filled"><span
+                                                class="text-dark small me-1">5.0</span>★</span>
+                                        <div class="rating-bar flex-grow-1 rounded overflow-hidden">
+                                            <div class="rating-fill h-100 bg-black" style="width: 80%;"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="rating-row d-flex align-items-center gap-2">
-                                    <span class="star-icon filled"><span class="text-dark small me-1">3.0</span>★</span>
-                                    <div class="rating-bar flex-grow-1 rounded overflow-hidden">
-                                        <div class="rating-fill h-100 bg-black" style="width: 40%;"></div>
+                                    <div class="rating-row d-flex align-items-center gap-2">
+                                        <span class="star-icon filled"><span
+                                                class="text-dark small me-1">4.0</span>★</span>
+                                        <div class="rating-bar flex-grow-1 rounded overflow-hidden">
+                                            <div class="rating-fill h-100 bg-black" style="width: 70%;"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="rating-row d-flex align-items-center gap-2">
-                                    <span class="star-icon"><span class="text-dark small me-1">2.0</span>★</span>
-                                    <div class="rating-bar flex-grow-1 rounded overflow-hidden">
-                                        <div class="rating-fill h-100 bg-black" style="width: 20%;"></div>
+                                    <div class="rating-row d-flex align-items-center gap-2">
+                                        <span class="star-icon filled"><span
+                                                class="text-dark small me-1">3.0</span>★</span>
+                                        <div class="rating-bar flex-grow-1 rounded overflow-hidden">
+                                            <div class="rating-fill h-100 bg-black" style="width: 40%;"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="rating-row d-flex align-items-center gap-2">
-                                    <span class="star-icon"><span class="text-dark small me-1">1.0</span>★</span>
-                                    <div class="rating-bar flex-grow-1 rounded overflow-hidden">
-                                        <div class="rating-fill h-100 bg-black" style="width: 10%;"></div>
+                                    <div class="rating-row d-flex align-items-center gap-2">
+                                        <span class="star-icon filled"><span
+                                                class="text-dark small me-1">2.0</span>★</span>
+                                        <div class="rating-bar flex-grow-1 rounded overflow-hidden">
+                                            <div class="rating-fill h-100 bg-black" style="width: 30%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-row d-flex align-items-center gap-2">
+                                        <span class="star-icon filled"><span
+                                                class="text-dark small me-1">1.0</span>★</span>
+                                        <div class="rating-bar flex-grow-1 rounded overflow-hidden">
+                                            <div class="rating-fill h-100 bg-black" style="width: 10%;"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div
-                        class="details-toggle-wrapper border-top text-center text-dark d-md-block d-none  px-md-4 mt-2">
-                        <span class="details-toggle text-dark fw-semibold" data-bs-toggle="collapse"
-                            data-bs-target="#detailsContentUnique2">
-                            Details
-                        </span>
-                    </div>
-                    <div class="collapse  px-md-4" id="detailsContentUnique2">
-                        <p class="text-secondary">More details about the product…</p>
+                        <div class="details-toggle-wrapper border-top text-center d-none d-md-block mt-3 w-50">
+                            <span class="details-toggle text-dark fw-semibold small" data-bs-toggle="collapse"
+                                data-bs-target="#detailsContent2">
+                                Details ▾
+                            </span>
+                        </div>
+
+                        <div class="collapse px-md-4" id="detailsContent2">
+                            <p class="text-secondary small mt-3">Verified Purchase: This product exceeded expectations
+                                in durability and design...</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -525,8 +581,9 @@
         <!-- blogs -->
         <section class="container py-5">
             <div class="container px-0  d-flex justify-content-between align-items-center mb-4">
-                <h2 class="fw-bolder text-dark">Recent Blogs</h2>
-                <a href="#"><button class="btn btn-dark btn-sm">See All <i class="fa-solid fa-arrow-right"></i></button>
+                <h2 class="fw-semibold text-dark">Recent <span style="color: rgb(18, 27, 184);">Blogs</span></h2>
+                <a href="#"><button class="btn btn-dark btn-sm px-2 rounded-2">See All <i
+                            class="px-1 fa-solid fa-arrow-right"></i></button>
             </div>
             <div class="mobile-horizontal-scroll-wrapper d-flex d-md-none">
 
@@ -596,10 +653,13 @@
                             <a href="#" class="text-dark" aria-label="Read more about Why Food Matters"><i
                                     class="fa-solid fa-arrow-right me-3"></i></a>
                         </div>
-                        <p class="text-muted py-3">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
+                        <p class="text-muted ">
+                            Lorem iattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+                            sollicitudin Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                            molestie,
                             dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-                            sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit,
+                            sollicisum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
+                            dictum est a, matt
                             sit.
                         </p>
                     </div>
@@ -695,7 +755,7 @@
         </section>
         <!-- logos -->
         <section class=" container py-5">
-            <div class="container text-center mb-4 px-0">
+            <div class="text-center mb-4 px-0">
                 <p class="fw-semibold">
                     Delivering reliable affiliate growth for over 2,500 industry-leading brands.
                 </p>
@@ -762,9 +822,9 @@
         <section>
             <div class="container py-3">
                 <div class="d-flex justify-content-between align-items-center mb-4">
-                    <h2 class="fw-bolder text-dark">Recent News</h2>
-                    <a href="#"><button class="btn btn-dark btn-sm">See All <i
-                                class="fa-solid fa-arrow-right"></i></button>
+                    <h2 class="fw-semibold text-dark">Recent News & articles</h2>
+                    <a href="#"><button class="btn btn-dark btn-sm px-2 rounded-2">See All <i
+                                class="px-1 fa-solid fa-arrow-right"></i></button>
                     </a>
                 </div>
                 <div class="row g-4">
@@ -903,7 +963,7 @@
             <div class="container py-5">
 
                 <div class="d-flex justify-content-between align-items-center mb-4 mb-lg-5">
-                    <h2 class="fs-4 fs-md-3 fw-bold text-dark">Featured Partners</h2>
+                    <h2 class="fs-4 fs-md-3 fw-semibold text-dark">Featured Partners</h2>
                 </div>
 
                 <div id="partner-grid">
@@ -955,7 +1015,7 @@
         <!-- reviews -->
         <section class="py-5">
             <div class="container">
-                <h3 class="fw-bold mb-5 ">What People Think About Us</h3>
+                <h3 class="fw-semibold mb-5 ">What People Think About Us</h3>
 
                 <div id="custom-testimonials-top" class="slider-wrapper testimonial-slider-wrapper mb-4">
                     <div class="slider-track-container d-flex w-100">
@@ -1471,7 +1531,7 @@
                                 </a>
                             </div>
                         </div>
-                        <img src="images/logodark.png" alt="">
+                        <img src="images/logodark.png" alt="" class="">
 
                     </div>
                 </div>

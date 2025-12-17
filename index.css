@@ -126,7 +126,7 @@
   /* stores */
   .logo-slider-track {
       width: max-content;
-      animation: scroll-left 20s linear infinite;
+      animation: scroll-left 40s linear infinite;
   }
 
   .logo-slider:hover .logo-slider-track {
@@ -169,7 +169,6 @@
   }
 
   .offcanvas-end {
-      top: -2px;
       width: 75vw;
       max-width: 300px;
   }
@@ -191,6 +190,7 @@
       }
   }
 
+
   @media(min-width: 992px) {
 
       .desktop-tall-image {
@@ -198,8 +198,13 @@
       }
 
       .desktop-short-image {
-          height: 242px;
+          height: 245px;
       }
+  }
+
+  * {
+      padding: 0;
+      margin: 0;
   }
 
   /* Cards & Reviews */
@@ -260,35 +265,75 @@
   }
 
   .image-fixed-size img {
-      width: 215px;
-      height: 207px;
       object-fit: cover;
       max-width: 100%;
   }
 
-  @media(max-width:767.98px) {
-      .image-fixed-size img {
-          width: 388px;
-          height: 189px;
+
+  /* --- Desktop Logic (992px and up) --- */
+  @media (min-width: 992px) {
+      .reviews-wrapper {
+          border: 1px solid #ddd;
+          border-radius: 8px;
       }
 
-
-      .reviews-wrapper {
-          border: none;
-          margin: 0;
+      .image-fixed-size {
+          width: 215px !important;
+          height: 207px !important;
+          flex-shrink: 0;
       }
 
       .details-toggle-wrapper {
-          width: 100%;
-          margin-left: 0;
+          width: 120px;
+          /* Narrow centered toggle */
+          margin: 10px auto 0;
       }
   }
 
-  @media (min-width: 768px) and (max-width: 991px) {
-      .image-fixed-size img {
-          width: 180px;
-          height: 160px;
+  /* --- Mobile Logic (Under 992px) --- */
+  @media (max-width: 991.98px) {
+      .reviews-wrapper {
+          border: none !important;
       }
+
+      .review-card {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          border-bottom: 1px solid #eee;
+          /* Light divider between cards */
+      }
+
+      .image-fixed-size {
+          width: 100%;
+          height: auto;
+      }
+
+      .review-img {
+          border-radius: 0;
+          /* Full edge-to-edge look */
+      }
+  }
+
+  /* --- Core Styles (No Hover/Transitions) --- */
+  .image-fixed-size img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+  }
+
+  .rating-bar {
+      height: 8px;
+      background-color: #eee;
+  }
+
+  .star-icon.filled {
+      color: #FFD700;
+  }
+
+  .details-toggle {
+      cursor: pointer;
+      user-select: none;
   }
 
   /* Blog Cards */
@@ -452,6 +497,7 @@
 
   .horizontal-scroll-row-unified::-webkit-scrollbar {
       display: none;
+
   }
 
   .scrolling-item-mobile {
@@ -473,7 +519,7 @@
 
       .scrolling-item-mobile {
           width: auto !important;
-          margin-right: 0;
+          margin-right: 15px;
       }
 
       .partner-card-video {
