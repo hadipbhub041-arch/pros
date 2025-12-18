@@ -366,6 +366,7 @@
       width: 100%;
       height: 140px !important;
       object-fit: cover;
+      margin-right: 2;
       border-radius: 6px;
       background: #f2f2f2;
   }
@@ -375,13 +376,8 @@
       background: #e5e5e5;
   }
 
-  .blog-card-mobile span {
-      margin-left: 4px;
-  }
-
   .mobile-horizontal-scroll-wrapper {
       overflow-x: auto;
-      gap: 5px;
       padding-bottom: 6px;
       -webkit-overflow-scrolling: touch;
       white-space: nowrap;
@@ -486,52 +482,73 @@
 
 
   /* Horizontal Scroll */
+  .partner-scroll-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+  }
+
   .horizontal-scroll-row-unified {
-      overflow-x: auto;
-      overflow-y: hidden;
+      display: flex !important;
+      flex-wrap: nowrap !important;
+      overflow-x: auto !important;
+      overflow-y: hidden !important;
+      padding-bottom: 20px;
+      scrollbar-width: none !important;
+      -ms-overflow-style: none !important;
       -webkit-overflow-scrolling: touch;
-      flex-wrap: nowrap;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
   }
 
   .horizontal-scroll-row-unified::-webkit-scrollbar {
-      display: none;
-
+      width: 0 !important;
+      height: 0 !important;
+      display: none !important;
+      background: transparent !important;
   }
 
   .scrolling-item-mobile {
       width: 306px !important;
-      margin-right: 1.5rem;
+      margin-right: 1.25rem;
+      flex-shrink: 0;
+      text-decoration: none;
+      display: block;
+  }
+
+  .grid-card-wrapper {
+      width: 100%;
+      overflow: hidden;
+      background-color: #f8f9fa;
   }
 
   .partner-card-video-mobile {
-      width: 306px !important;
+      width: 100% !important;
       height: 545px !important;
       object-fit: cover;
+      display: block;
   }
 
-  @media(min-width: 992px) {
+  @media (min-width: 992px) {
+      .partner-scroll-container {
+          overflow: visible;
+          }
+
       .horizontal-scroll-row-unified {
-          flex-wrap: wrap !important;
+          display: grid !important;
+          grid-template-columns: repeat(4, 1fr) !important;
+          gap: 20px !important;
+          padding-bottom: 0 !important;
+          margin-bottom: 0 !important;
           overflow-x: hidden !important;
+          flex-wrap: wrap !important;
       }
 
       .scrolling-item-mobile {
-          width: auto !important;
-          margin-right: 15px;
-      }
-
-      .partner-card-video {
           width: 100% !important;
-          height: 432px !important;
-          object-fit: cover;
-          display: block;
+          margin-right: 0 !important;
       }
 
-      .grid-card-wrapper {
-          height: 432px;
-          width: 100%;
+      .partner-card-video-mobile {
+          height: 432px !important;
       }
   }
 
