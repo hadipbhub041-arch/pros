@@ -50,14 +50,13 @@
       }
   }
 
-
-  .form-control:focus {
+  #searchInput:focus {
       outline: none !important;
       box-shadow: none !important;
+      border-color: #ced4da !important;
   }
 
-  input[type="search"]:focus {
-      outline: none !important;
+  .input-group:focus-within {
       box-shadow: none !important;
   }
 
