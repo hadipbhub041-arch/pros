@@ -4,6 +4,53 @@
       padding: 0;
   }
 
+  @media (max-width: 991.98px) {
+
+      .custom-nav-wrapper {
+          background-color: #000 !important;
+          width: 75vw;
+          max-width: 300px;
+          height: 80%;
+          top: 6%;
+      }
+
+      .custom-nav-wrapper .navbar-nav {
+          align-items: flex-end;
+      }
+
+      .custom-nav-wrapper .nav-link {
+          font-size: 1.5rem;
+          font-weight: 500;
+          padding-right: 0;
+          padding: 1.25rem 1.5rem 1.5rem 2rem !important;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.274);
+          color: #fff !important;
+      }
+  }
+
+  @media (min-width: 992px) {
+      .custom-nav-wrapper.offcanvas-lg {
+          position: static !important;
+          transform: none !important;
+          visibility: visible !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          inset: auto !important;
+          background: transparent !important;
+      }
+
+      /* Center nav links */
+      .custom-nav-wrapper .navbar-nav {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 100%;
+          margin: 0 auto;
+      }
+  }
+
+
   .form-control:focus {
       outline: none !important;
       box-shadow: none !important;

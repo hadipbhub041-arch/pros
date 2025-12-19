@@ -16,7 +16,80 @@
 </head>
 
 <body style="background-color: rgb(252, 252, 252);">
-    
+    <header class="container">
+
+        <!-- HEADER ROW -->
+        <div class="row align-items-center py-2">
+
+            <!-- LOGO -->
+            <div class="col-6 col-lg-3 order-1">
+                <img src="/images/Logo.webp" width="130" height="40" alt="Logo">
+            </div>
+
+            <!-- SEARCH -->
+            <div class="col-12 col-lg-5 ms-lg-auto order-3 order-lg-2 mt-2 mt-lg-0">
+                <div class="position-relative">
+                    <div class="input-group shadow-sm">
+                        <input id="searchInput" type="search" class="form-control border-end-0"
+                            placeholder="Search Categories" autocomplete="off">
+                        <span class="input-group-text bg-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search text-muted" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </span>
+                    </div>
+
+                    <!-- AUTOCOMPLETE -->
+                    <div id="suggestionsList" class="list-group position-absolute w-100 shadow bg-white"
+                        style="display:none; z-index:1050;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- TOGGLER -->
+            <div class="col-6 col-lg-3 order-2 order-lg-2 d-flex justify-content-end d-lg-none">
+                <button class="navbar-toggler d-lg-none border-0 p-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mainNav" aria-controls="mainNav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24"
+                        stroke="black" stroke-width="2" class="burger-icon">
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- NAV ROW -->
+        <div class="row full-width-border mt-2">
+            <div class="col-12">
+                <div class="offcanvas offcanvas-lg offcanvas-end custom-nav-wrapper" tabindex="-1" id="mainNav"
+                    style="top: 6%;">
+
+                    <div class="offcanvas-body py-2">
+                        <button type="button" class="btn-close btn-close-white ms-auto d-lg-none"
+                            data-bs-dismiss="offcanvas" aria-label="Close">
+                        </button>
+
+                        <ul class="navbar-nav flex-column flex-lg-row justify-content-between text-center">
+                            <li class="nav-item px-lg-3"><a class="nav-link" href="#">All</a></li>
+                            <li class="nav-item px-lg-3"><a class="nav-link" href="#">Travel</a></li>
+                            <li class="nav-item px-lg-3"><a class="nav-link" href="#">Things to do</a></li>
+                            <li class="nav-item px-lg-3"><a class="nav-link" href="#">Beauty & Spa</a></li>
+                            <li class="nav-item px-lg-3"><a class="nav-link" href="#">Beverages</a></li>
+                            <li class="nav-item px-lg-3"><a class="nav-link" href="#">Massage</a></li>
+                            <li class="nav-item px-lg-3"><a class="nav-link" href="#">Goods</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
     <main>
         <section>
             <div class="py-4 d-lg-none">
@@ -1613,8 +1686,11 @@
             </div>
         </div>
     </footer>
+
     <img src="images/Logo.webp" class="container d-block mx-auto" alt="">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+
     <script>
         const splide = new Splide('#popular-stores', {
             type: 'loop',
@@ -1634,9 +1710,7 @@
     </script>
     <script
         src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+
     <script src="index.js"></script>
 </body>
 
