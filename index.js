@@ -1,10 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.star-icon').forEach(star => {
+    const stars = document.querySelectorAll('.star-icon');
+
+    stars.forEach(star => {
+        // Ensure class is removed on fresh load (precaution)
+        star.classList.remove('filled');
+
         star.addEventListener('click', () => {
             star.classList.toggle('filled');
         });
     });
-
 
     const ANIMATION_SPEED_TOP = 45;
     const ANIMATION_SPEED_BOTTOM = 45;

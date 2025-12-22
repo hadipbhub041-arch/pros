@@ -17,15 +17,11 @@
 
 <body style="background-color: rgb(252, 252, 252);">
     <header class="container">
-        <!-- HEADER ROW -->
         <div class="row align-items-center py-2">
-            <!-- LOGO -->
             <div class="col-6 col-lg-3 order-1">
                 <img src="/images/Logo.webp" width="130" height="40" alt="Logo">
             </div>
-
-            <!-- SEARCH -->
-            <div class="col-12 col-lg-5 ms-lg-auto order-3 order-lg-2 mt-2 mt-lg-0">
+            <div class="col-12 col-lg-5 ms-lg-auto order-3 order-lg-2 mt-2 mb-2">
                 <div class="position-relative">
                     <div class="input-group shadow-sm">
                         <input id="searchInput" type="search" class="form-control border-end-0"
@@ -43,7 +39,6 @@
                     </div>
                 </div>
             </div>
-            <!-- TOGGLER -->
             <div class="col-6 col-lg-3 order-2 order-lg-2 d-flex justify-content-end d-lg-none">
                 <button class="navbar-toggler d-lg-none border-0 p-0" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#mainNav" aria-controls="mainNav">
@@ -55,11 +50,9 @@
                     </svg>
                 </button>
             </div>
-
         </div>
-
         <!-- NAV ROW -->
-        <div class="row full-width-border mt-2">
+        <div class="row full-width-border m-0">
             <div class="col-12">
                 <div class="offcanvas offcanvas-lg offcanvas-end custom-nav-wrapper" tabindex="-1" id="mainNav"
                     style="top: 6%;">
@@ -69,7 +62,7 @@
                             data-bs-dismiss="offcanvas" aria-label="Close">
                         </button>
 
-                        <ul class="navbar-nav flex-column flex-lg-row justify-content-between text-center">
+                        <ul class="navbar-nav flex-column flex-lg-row justify-content-between text-center me-5">
                             <li class="nav-item px-lg-3"><a class="nav-link" href="#">All</a></li>
                             <li class="nav-item px-lg-3"><a class="nav-link" href="#">Travel</a></li>
                             <li class="nav-item px-lg-3"><a class="nav-link" href="#">Things to do</a></li>
@@ -157,12 +150,12 @@
         </section>
         <!-- popular  stores -->
         <section>
-            <div class="container py-4">
+            <div class="container py-5">
                 <h2 class="fw-semibold fs-3 fs-md-2">
                     Popular stores
                 </h2>
-                <div class="logo-slider overflow-hidden position-relative mt-4">
-                    <div class="logo-slider-wrapper pt-5 overflow-hidden position-relative">
+                <div class="logo-slider overflow-hidden position-relative">
+                    <div class="logo-slider-wrapper pt-3 overflow-hidden position-relative">
                         <div class="logo-slider-track d-flex">
 
                             <a href="">
@@ -366,17 +359,15 @@
         <!-- product reviews -->
         <section class="container py-5 mt-5">
             <div class="d-flex justify-content-between mb-3">
-                <h2 class="h2 fs-3 fs-md-2 fw-semibold">Product Reviews</h2>
+                <h2 class="h2 fs-3 fs-md-2 fw-semibold text-truncate-1-lines">Product Reviews</h2>
                 <a href="#">
                     <button class="btn btn-dark btn-sm px-2 rounded-2">
                         See All <i class="px-1 fa-solid fa-arrow-right"></i>
                     </button>
                 </a>
             </div>
-
             <div class="container py-4 overflow-hidden px-0">
                 <div class="reviews-wrapper overflow-hidden">
-
                     <div class="review-card p-3 p-lg-4 px-lg-5">
                         <div class="row align-items-center gx-0 gx-md-4">
                             <div class="col-md-auto col-12 mb-3 mb-md-0 d-flex justify-content-center">
@@ -388,13 +379,12 @@
                                     </a>
                                 </div>
                             </div>
-
                             <div class="col-md col-12 px-md-4">
                                 <a href="#" class="text-decoration-none text-dark">
-                                    <p class="fw-bold mb-2">Bill Board</p>
+                                    <p class="fw-bold mb-2 text-truncate-2-lines">Bill Board</p>
                                 </a>
                                 <div class="review-text-container d-none d-md-block">
-                                    <p class="text-muted review-desc text-truncate-3-lines mb-0">
+                                    <p class="text-muted review-desc text-truncate-4-lines mb-0">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
                                         molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
                                         accumsan...
@@ -402,135 +392,69 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3 d-none d-md-flex flex-column align-items-center ps-4">
-                                <div class="rating fs-4 m-1-wrapper d-flex flex-column gap-2 w-100">
-                                    <div class="rating fs-4 m-1-row d-flex align-items-center gap-2">
-                                        <span class="star-icon user-select-none filled"><span
-                                                class="text-dark small me-1">5.0</span>★</span>
-                                        <div class="rating fs-4 progress m-1-bar flex-grow-1 rounded overflow-hidden">
-                                            <div class="rating fs-4 progress-bar m-1-fill h-100 bg-black"
-                                                style="width: 90%;"></div>
+                            <div class="col-12 col-md-12 col-lg-3 mt-4 mt-lg-0 ps-lg-4 rating-section">
+
+                                <div class="row row-cols-md-5 row-cols-lg-1 g-3 align-items-end">
+
+                                    <div class="col">
+                                        <div
+                                            class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-1">
+                                            <span class="small fw-bold text-nowrap">5.0 ★</span>
+                                            <div class="progress flex-grow-1 w-100 rounded-pill"
+                                                style="height: 6px; background-color: #eee;">
+                                                <div class="progress-bar bg-black" style="width: 90%;"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="rating fs-4 m-1-row d-flex align-items-center gap-2">
-                                        <span class="star-icon user-select-none filled"><span
-                                                class="text-dark small me-1">4.0</span>★</span>
-                                        <div class="rating fs-4 progress m-1-bar flex-grow-1 rounded overflow-hidden">
-                                            <div class="rating fs-4 progress-bar m-1-fill h-100 bg-black"
-                                                style="width: 40%;"></div>
+
+                                    <div class="col">
+                                        <div
+                                            class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-1">
+                                            <span class="small fw-bold text-nowrap">4.0 ★</span>
+                                            <div class="progress flex-grow-1 w-100 rounded-pill"
+                                                style="height: 6px; background-color: #eee;">
+                                                <div class="progress-bar bg-black" style="width: 75%;"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="rating fs-4 m-1-row d-flex align-items-center gap-2">
-                                        <span class="star-icon user-select-none filled"><span
-                                                class="text-dark small me-1">3.0</span>★</span>
-                                        <div class="rating fs-4 progress m-1-bar flex-grow-1 rounded overflow-hidden">
-                                            <div class="rating fs-4 progress-bar m-1-fill h-100 bg-black"
-                                                style="width: 80%;"></div>
+
+                                    <div class="col">
+                                        <div
+                                            class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-1">
+                                            <span class="small fw-bold text-nowrap">3.0 ★</span>
+                                            <div class="progress flex-grow-1 w-100 rounded-pill"
+                                                style="height: 6px; background-color: #eee;">
+                                                <div class="progress-bar bg-black" style="width: 60%;"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="rating fs-4 m-1-row d-flex align-items-center gap-2">
-                                        <span class="star-icon user-select-none filled"><span
-                                                class="text-dark small me-1">2.0</span>★</span>
-                                        <div class="rating fs-4 progress m-1-bar flex-grow-1 rounded overflow-hidden">
-                                            <div class="rating fs-4 progress-bar m-1-fill h-100 bg-black"
-                                                style="width: 30%;"></div>
+
+                                    <div class="col">
+                                        <div
+                                            class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-1">
+                                            <span class="small fw-bold text-nowrap">2.0 ★</span>
+                                            <div class="progress flex-grow-1 w-100 rounded-pill"
+                                                style="height: 6px; background-color: #eee;">
+                                                <div class="progress-bar bg-black" style="width: 40%;"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="rating fs-4 m-1-row d-flex align-items-center gap-2">
-                                        <span class="star-icon user-select-none filled"><span
-                                                class="text-dark small me-2">1.0</span>★</span>
-                                        <div class="rating fs-4 progress m-1-bar flex-grow-1 rounded overflow-hidden">
-                                            <div class="rating fs-4 progress-bar m-1-fill h-100 bg-black"
-                                                style="width: 10%;"></div>
+
+                                    <div class="col">
+                                        <div
+                                            class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-1">
+                                            <span class="small fw-bold text-nowrap">1.0 ★</span>
+                                            <div class="progress flex-grow-1 w-100 rounded-pill"
+                                                style="height: 6px; background-color: #eee;">
+                                                <div class="progress-bar bg-black" style="width: 20%;"></div>
+                                            </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
-
-                        <div class="details-toggle-wrapper border-top text-center d-none d-md-block mt-3 w-50">
-                            <span class="details-toggle user-select-none text-dark fw-semibold small"
-                                data-bs-toggle="collapse" data-bs-target="#detailsContent1">
-                                Details ▾
-                            </span>
-                        </div>
-
-                        <div class="collapse px-md-4" id="detailsContent1">
-                            <p class="text-secondary small mt-3">Verified Purchase: This product exceeded expectations
-                                in durability and design...</p>
-                        </div>
-                    </div>
-                    <div class="review-card p-3 p-lg-4 px-lg-5">
-                        <div class="row align-items-center gx-0 gx-md-4">
-                            <div class="col-md-auto col-12 mb-3 mb-md-0 d-flex justify-content-center">
-                                <div class="image-fixed-size">
-                                    <a href="#">
-                                        <img src="images/r1.webp"
-                                            class="review-img d-block object-fit-cover w-100 h-100"
-                                            alt="Product Review">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-md col-12 px-md-4">
-                                <a href="#" class="text-decoration-none text-dark">
-                                    <p class="fw-bold mb-2">Bill Board</p>
-                                </a>
-                                <div class="review-text-container d-none d-md-block">
-                                    <p class="text-muted review-desc text-truncate-3-lines mb-0">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                        molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                        accumsan...
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 d-none d-md-flex flex-column align-items-center ps-4">
-                                <div class="rating fs-4 m-1-wrapper d-flex flex-column gap-2 w-100">
-                                    <div class="rating fs-4 m-1-row d-flex align-items-center gap-2">
-                                        <span class="star-icon user-select-none filled"><span
-                                                class="text-dark small me-1">5.0</span>★</span>
-                                        <div class="rating fs-4 progress m-1-bar flex-grow-1 rounded overflow-hidden">
-                                            <div class="rating fs-4 progress-bar m-1-fill h-100 bg-black"
-                                                style="width: 90%;"></div>
-                                        </div>
-                                    </div>
-                                    <div class="rating fs-4 m-1-row d-flex align-items-center gap-2">
-                                        <span class="star-icon user-select-none filled"><span
-                                                class="text-dark small me-1">4.0</span>★</span>
-                                        <div class="rating fs-4 progress m-1-bar flex-grow-1 rounded overflow-hidden">
-                                            <div class="rating fs-4 progress-bar m-1-fill h-100 bg-black"
-                                                style="width: 40%;"></div>
-                                        </div>
-                                    </div>
-                                    <div class="rating fs-4 m-1-row d-flex align-items-center gap-2">
-                                        <span class="star-icon user-select-none filled"><span
-                                                class="text-dark small me-1">3.0</span>★</span>
-                                        <div class="rating fs-4 progress m-1-bar flex-grow-1 rounded overflow-hidden">
-                                            <div class="rating fs-4 progress-bar m-1-fill h-100 bg-black"
-                                                style="width: 80%;"></div>
-                                        </div>
-                                    </div>
-                                    <div class="rating fs-4 m-1-row d-flex align-items-center gap-2">
-                                        <span class="star-icon user-select-none filled"><span
-                                                class="text-dark small me-1">2.0</span>★</span>
-                                        <div class="rating fs-4 progress m-1-bar flex-grow-1 rounded overflow-hidden">
-                                            <div class="rating fs-4 progress-bar m-1-fill h-100 bg-black"
-                                                style="width: 30%;"></div>
-                                        </div>
-                                    </div>
-                                    <div class="rating fs-4 m-1-row d-flex align-items-center gap-2">
-                                        <span class="star-icon user-select-none filled"><span
-                                                class="text-dark small me-2">1.0</span>★</span>
-                                        <div class="rating fs-4 progress m-1-bar flex-grow-1 rounded overflow-hidden">
-                                            <div class="rating fs-4 progress-bar m-1-fill h-100 bg-black"
-                                                style="width: 10%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="details-toggle-wrapper border-top text-center d-none d-md-block mt-3 w-50">
+                        <div class="details-toggle-wrapper border-top border-3 text-center d-none d-md-block mt-3 w-25">
                             <span class="details-toggle user-select-none text-dark fw-semibold small"
                                 data-bs-toggle="collapse" data-bs-target="#detailsContent">
                                 Details ▾
@@ -538,7 +462,127 @@
                         </div>
 
                         <div class="collapse px-md-4" id="detailsContent">
-                            <p class="text-secondary small mt-3">Verified Purchase: This product exceeded expectations
+                            <p class="text-secondary small mt-3 text-truncate-4-lines">Verified Purchase: This product
+                                exceeded expectations Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Temporibus rem ut ipsum! Dolor quia aperiam repudiandae nemo impedit veritatis quo
+                                aspernatur dolore, amet tenetur perspiciatis eos quae earum suscipit omnis eligendi modi
+                                maxime sint iste labore sequi voluptatem. Officiis perferendis nisi harum, eius tenetur
+                                eveniet non ipsa excepturi a corporis facere distinctio ducimus facilis odit nihil
+                                quidem, qui minima nulla illum maiores, rem ea voluptate. Mollitia libero suscipit
+                                officia nostrum facilis eum deleniti fugit reprehenderit minus saepe minima optio enim
+                                eveniet nesciunt iusto architecto delectus dolorum explicabo ipsum maiores, ducimus
+                                incidunt. Provident doloremque quis, nesciunt repellendus sit laboriosam soluta
+                                similique nam quos eius at, laudantium perspiciatis magni vel in nihil ut optio?
+                                Distinctio?
+                                in durability and design...</p>
+                        </div>
+                    </div>
+                    <div class="review-card p-3 p-lg-4 px-lg-5">
+                        <div class="row align-items-center gx-0 gx-md-4">
+                            <div class="col-md-auto col-12 mb-3 mb-md-0 d-flex justify-content-center">
+                                <div class="image-fixed-size">
+                                    <a href="#">
+                                        <img src="images/r1.webp"
+                                            class="review-img d-block object-fit-cover w-100 h-100"
+                                            alt="Product Review">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md col-12 px-md-4">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <p class="fw-bold mb-2 text-truncate-2-lines">Bill Board</p>
+                                </a>
+                                <div class="review-text-container d-none d-md-block">
+                                    <p class="text-muted review-desc text-truncate-4-lines mb-0">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                                        molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
+                                        accumsan...
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-12 col-lg-3 mt-4 mt-lg-0 ps-lg-4 rating-section">
+
+                                <div class="row row-cols-md-5 row-cols-lg-1 g-3 align-items-end">
+
+                                    <div class="col">
+                                        <div
+                                            class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-1">
+                                            <span class="small fw-bold text-nowrap">5.0 ★</span>
+                                            <div class="progress flex-grow-1 w-100 rounded-pill"
+                                                style="height: 6px; background-color: #eee;">
+                                                <div class="progress-bar bg-black" style="width: 90%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div
+                                            class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-1">
+                                            <span class="small fw-bold text-nowrap">4.0 ★</span>
+                                            <div class="progress flex-grow-1 w-100 rounded-pill"
+                                                style="height: 6px; background-color: #eee;">
+                                                <div class="progress-bar bg-black" style="width: 75%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div
+                                            class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-1">
+                                            <span class="small fw-bold text-nowrap">3.0 ★</span>
+                                            <div class="progress flex-grow-1 w-100 rounded-pill"
+                                                style="height: 6px; background-color: #eee;">
+                                                <div class="progress-bar bg-black" style="width: 60%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div
+                                            class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-1">
+                                            <span class="small fw-bold text-nowrap">2.0 ★</span>
+                                            <div class="progress flex-grow-1 w-100 rounded-pill"
+                                                style="height: 6px; background-color: #eee;">
+                                                <div class="progress-bar bg-black" style="width: 40%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div
+                                            class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-1">
+                                            <span class="small fw-bold text-nowrap">1.0 ★</span>
+                                            <div class="progress flex-grow-1 w-100 rounded-pill"
+                                                style="height: 6px; background-color: #eee;">
+                                                <div class="progress-bar bg-black" style="width: 20%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details-toggle-wrapper border-top border-3 text-center d-none d-md-block mt-3 w-25">
+                            <span class="details-toggle user-select-none text-dark fw-semibold small"
+                                data-bs-toggle="collapse" data-bs-target="#detailsContent3">
+                                Details ▾
+                            </span>
+                        </div>
+
+                        <div class="collapse px-md-4 " id="detailsContent3">
+                            <p class="text-secondary small mt-3 text-truncate-4-lines">Verified Purchase: This product
+                                exceeded expectations Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Temporibus rem ut ipsum! Dolor quia aperiam repudiandae nemo impedit veritatis quo
+                                aspernatur dolore, amet tenetur perspiciatis eos quae earum suscipit omnis eligendi modi
+                                maxime sint iste labore sequi voluptatem. Officiis perferendis nisi harum, eius tenetur
+                                eveniet non ipsa excepturi a corporis facere distinctio ducimus facilis odit nihil
+                                quidem, qui minima nulla illum maiores, rem ea voluptate. Mollitia libero suscipit
+                                officia nostrum facilis eum deleniti fugit reprehenderit minus saepe minima optio enim
+                                eveniet nesciunt iusto architecto delectus dolorum explicabo ipsum maiores, ducimus
+                                incidunt. Provident doloremque quis, nesciunt repellendus sit laboriosam soluta
+                                similique nam quos eius at, laudantium perspiciatis magni vel in nihil ut optio?
+                                Distinctio?
                                 in durability and design...</p>
                         </div>
                     </div>
@@ -556,10 +600,10 @@
 
                             <div class="col-md col-12 px-md-4">
                                 <a href="#" class="text-decoration-none text-dark">
-                                    <p class="fw-bold mb-2">Bill Board</p>
+                                    <p class="fw-bold mb-2 text-truncate-2-lines">Bill Board</p>
                                 </a>
                                 <div class="review-text-container d-none d-md-block">
-                                    <p class="text-muted review-desc text-truncate-3-lines mb-0">
+                                    <p class="text-muted review-desc text-truncate-4-lines mb-0">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
                                         molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
                                         accumsan...
@@ -567,86 +611,119 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3 d-none d-md-flex flex-column align-items-center ps-4">
-                                <div class="rating fs-4 m-1-wrapper d-flex flex-column gap-2 w-100">
-                                    <div class="rating fs-4 m-1-row d-flex align-items-center gap-2">
-                                        <span class="star-icon user-select-none filled"><span
-                                                class="text-dark small me-1">5.0</span>★</span>
-                                        <div class="rating fs-4 progress m-1-bar flex-grow-1 rounded overflow-hidden">
-                                            <div class="rating fs-4 progress-bar m-1-fill h-100 bg-black"
-                                                style="width: 90%;"></div>
+                            <div class="col-12 col-md-12 col-lg-3 mt-4 mt-lg-0 ps-lg-4 rating-section">
+                                <div class="row row-cols-md-5 row-cols-lg-1 g-3 align-items-end">
+                                    <div class="col">
+                                        <div
+                                            class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+                                            <span
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled">5.0
+                                                ★</span>
+                                            <div class="progress flex-grow-1 w-100 rounded-pill"
+                                                style="height: 8px; background-color: #eee;">
+                                                <div class="progress-bar bg-black" style="width: 90%;"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="rating fs-4 m-1-row d-flex align-items-center gap-2">
-                                        <span class="star-icon user-select-none filled"><span
-                                                class="text-dark small me-1">4.0</span>★</span>
-                                        <div class="rating fs-4 progress m-1-bar flex-grow-1 rounded overflow-hidden">
-                                            <div class="rating fs-4 progress-bar m-1-fill h-100 bg-black"
-                                                style="width: 40%;"></div>
+
+                                    <div class="col">
+                                        <div
+                                            class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+                                            <span
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled">4.0
+                                                ★</span>
+                                            <div class="progress flex-grow-1 w-100 rounded-pill"
+                                                style="height: 8px; background-color: #eee;">
+                                                <div class="progress-bar bg-black" style="width: 80%;"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="rating fs-4 m-1-row d-flex align-items-center gap-2">
-                                        <span class="star-icon user-select-none filled"><span
-                                                class="text-dark small me-1">3.0</span>★</span>
-                                        <div class="rating fs-4 progress m-1-bar flex-grow-1 rounded overflow-hidden">
-                                            <div class="rating fs-4 progress-bar m-1-fill h-100 bg-black"
-                                                style="width: 80%;"></div>
+                                    <div class="col">
+                                        <div
+                                            class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+                                            <span
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled">3.0
+                                                ★</span>
+                                            <div class="progress flex-grow-1 w-100 rounded-pill"
+                                                style="height: 8px; background-color: #eee;">
+                                                <div class="progress-bar bg-black" style="width: 70%;"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="rating fs-4 m-1-row d-flex align-items-center gap-2">
-                                        <span class="star-icon user-select-none filled"><span
-                                                class="text-dark small me-1">2.0</span>★</span>
-                                        <div class="rating fs-4 progress m-1-bar flex-grow-1 rounded overflow-hidden">
-                                            <div class="rating fs-4 progress-bar m-1-fill h-100 bg-black"
-                                                style="width: 30%;"></div>
+
+                                    <div class="col">
+                                        <div
+                                            class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+                                            <span
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled">2.0
+                                                ★</span>
+                                            <div class="progress flex-grow-1 w-100 rounded-pill"
+                                                style="height: 8px; background-color: #eee;">
+                                                <div class="progress-bar bg-black" style="width: 40%;"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="rating fs-4 m-1-row d-flex align-items-center gap-2">
-                                        <span class="star-icon user-select-none filled"><span
-                                                class="text-dark small me-2">1.0</span>★</span>
-                                        <div class="rating fs-4 progress m-1-bar flex-grow-1 rounded overflow-hidden">
-                                            <div class="rating fs-4 progress-bar m-1-fill h-100 bg-black"
-                                                style="width: 10%;"></div>
+
+                                    <div class="col">
+                                        <div
+                                            class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+                                            <span
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled">1.0
+                                                ★</span>
+                                            <div class="progress flex-grow-1 w-100 rounded-pill"
+                                                style="height: 8px; background-color: #eee;">
+                                                <div class="progress-bar bg-black" style="width: 20%;"></div>
+                                            </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
-
-                        <div class="details-toggle-wrapper border-top text-center d-none d-md-block mt-3 w-50">
+                        <div class="details-toggle-wrapper border-top border-3 text-center d-none d-md-block mt-3 w-25">
                             <span class="details-toggle user-select-none text-dark fw-semibold small"
-                                data-bs-toggle="collapse" data-bs-target="#detailsContent2">
+                                data-bs-toggle="collapse" data-bs-target="#detailsContent1">
                                 Details ▾
                             </span>
                         </div>
 
-                        <div class="collapse px-md-4" id="detailsContent2">
-                            <p class="text-secondary small mt-3">Verified Purchase: This product exceeded expectations
+                        <div class="collapse px-md-4" id="detailsContent1">
+                            <p class="text-secondary small mt-3 text-truncate-4-lines">Verified Purchase: This product
+                                exceeded expectations Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Temporibus rem ut ipsum! Dolor quia aperiam repudiandae nemo impedit veritatis quo
+                                aspernatur dolore, amet tenetur perspiciatis eos quae earum suscipit omnis eligendi modi
+                                maxime sint iste labore sequi voluptatem. Officiis perferendis nisi harum, eius tenetur
+                                eveniet non ipsa excepturi a corporis facere distinctio ducimus facilis odit nihil
+                                quidem, qui minima nulla illum maiores, rem ea voluptate. Mollitia libero suscipit
+                                officia nostrum facilis eum deleniti fugit reprehenderit minus saepe minima optio enim
+                                eveniet nesciunt iusto architecto delectus dolorum explicabo ipsum maiores, ducimus
+                                incidunt. Provident doloremque quis, nesciunt repellendus sit laboriosam soluta
+                                similique nam quos eius at, laudantium perspiciatis magni vel in nihil ut optio?
+                                Distinctio?
                                 in durability and design...</p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
         <!-- blogs -->
         <section class="container py-5">
             <div class="container px-0 d-flex justify-content-between align-items-center mb-4">
-                <h2 class="fw-semibold
+                <h2 class="fw-semibold text-truncate-1-lines
                 fs-3 fs-md-2">Recent <span style="color: rgb(18, 27, 184);">Blogs</span></h2>
                 <a href="#"><button class="btn btn-dark btn-sm px-2 rounded-2">See All <i
                             class="px-1 fa-solid fa-arrow-right"></i></button></a>
             </div>
-
-            <!-- Mobile: Horizontal Scroll with hidden scrollbar -->
             <div class="d-flex flex-nowrap overflow-auto d-md-none hide-scrollbar pb-2">
                 <div class="flex-shrink-0 me-3" style="width: 180px;">
                     <a href="#" class="text-decoration-none text-dark">
                         <div class="overflow-hidden rounded-3 mb-2" style="height: 140px;">
-                            <img src="images/b1.webp" class="w-100 h-100 object-fit-cover" alt="Food Blog Image"
-                                loading="lazy">
+                            <img src="https://placehold.co/600x400" class="w-100 h-100 object-fit-cover"
+                                alt="Food Blog Image" loading="lazy">
                         </div>
                         <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold small text-truncate">Why Food Matters</span>
+                            <span class="fw-bold small text-truncate-1-lines">Why Food Matters</span>
                             <i class="fa-solid fa-up-right-from-square text-muted ms-2"></i>
                         </div>
                     </a>
@@ -659,7 +736,7 @@
                                 loading="lazy">
                         </div>
                         <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold small text-truncate">Why Food Matters</span>
+                            <span class="fw-bold small text-truncate-1-lines">Why Food Matters</span>
                             <i class="fa-solid fa-up-right-from-square text-muted ms-2"></i>
                         </div>
                     </a>
@@ -672,7 +749,7 @@
                                 loading="lazy">
                         </div>
                         <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold small text-truncate">Why Food Matters</span>
+                            <span class="fw-bold small text-truncate-1-lines">Why Food Matters</span>
                             <i class="fa-solid fa-up-right-from-square text-muted ms-2"></i>
                         </div>
                     </a>
@@ -681,11 +758,11 @@
                 <div class="flex-shrink-0 me-3" style="width: 180px;">
                     <a href="#" class="text-decoration-none text-dark">
                         <div class="overflow-hidden rounded-3 mb-2" style="height: 140px;">
-                            <img src="images/b1.webp" class="w-100 h-100 object-fit-cover" alt="Food Blog Image"
-                                loading="lazy">
+                            <img src="https://placehold.co/600x400" class="w-100 h-100 object-fit-cover"
+                                alt="Food Blog Image" loading="lazy">
                         </div>
                         <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold small text-truncate">Why Food Matters</span>
+                            <span class="fw-bold small text-truncate-1-lines">Why Food Matters</span>
                             <i class="fa-solid fa-up-right-from-square text-muted ms-2"></i>
                         </div>
                     </a>
@@ -698,7 +775,7 @@
                                 loading="lazy">
                         </div>
                         <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold small text-truncate">Why Food Matters</span>
+                            <span class="fw-bold small text-truncate-1-lines">Why Food Matters</span>
                             <i class="fa-solid fa-up-right-from-square text-muted ms-2"></i>
                         </div>
                     </a>
@@ -711,7 +788,7 @@
                     <div class="card border-0 h-100" style="background-color: rgb(248, 248, 253);">
                         <a href="#">
                             <div class="overflow-hidden">
-                                <img src="images/b1.webp" class="img-fluid w-100"
+                                <img src="https://placehold.co/600x400" class="img-fluid w-100"
                                     style="height: 343px; object-fit: cover;" alt="Featured Blog Image">
                             </div>
                         </a>
@@ -722,13 +799,16 @@
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-2">
                                 <a href="#" class="text-decoration-none text-dark">
-                                    <h5 class="fw-bold mb-0">Why Food Matters</h5>
+                                    <h5 class="fw-bold mb-0 text-truncate-2-lines">Why Food Matters Lorem ipsum dolor
+                                        sit, amet consectetur adipisicing elit. Quidem non at unde, possimus inventore
+                                        quia corrupti rerum. Unde, fugit expedita doloribus dicta rem suscipit, ipsum
+                                        voluptate sed odio vel recusandae saepe cumque enim?</h5>
                                 </a>
                                 <a href="#" class="text-dark" aria-label="Read more about Why Food Matters">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
-                            <p class="text-muted mb-0">
+                            <p class="text-muted mb-0 text-truncate-4-lines ">
                                 Lorem iattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
                                 sollicitudin Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
                                 molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan...
@@ -739,99 +819,113 @@
 
                 <div class="col-12 col-lg-6">
                     <div class="h-100 d-flex flex-column justify-content-between gap-3">
-                        <!-- Small Blog 1 -->
-                        <div class="card border-0" style="background-color: rgb(248, 248, 253);">
-                            <div class="row g-0 h-100">
-                                <div class="col-4">
-                                    <a href="#" class="h-100 d-block">
-                                        <img src="images/b4.webp" class="w-100 h-100 object-fit-cover rounded-start"
-                                            alt="Small Blog Image 1">
+                        <div class="card border-0" style="background-color: rgb(248, 248, 253); overflow: hidden;">
+                            <div class="row g-0 align-items-start">
+                                <div class="col-auto me-2">
+                                    <a href="#" class="d-block" style="width: 196px; height: 192px; overflow: hidden;">
+                                        <img src="images/b4.webp"
+                                            style="width: 100%; height: 100%; object-fit: cover; display: block;"
+                                            class="rounded-start" alt="Small Blog Image 1">
                                     </a>
                                 </div>
-                                <div class="col-8">
-                                    <div class="card-body h-100 d-flex flex-column">
-                                        <div class="d-flex justify-content-between small text-muted mb-1">
+
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between small text-muted mb-2">
                                             <span>Oliver Smith</span>
                                             <span>20 Jan 2025</span>
                                         </div>
-                                        <div class="d-flex align-items-center justify-content-between mb-2">
-                                            <a href="#" class="text-decoration-none text-dark">
-                                                <h6 class="fw-bold mb-0">Why Food Matters Lorem ipsum dolor sit amet
-                                                </h6>
-                                            </a>
-                                            <a href="#" class="text-dark" aria-label="Read more">
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                        <p class="text-muted small mb-0 mt-auto d-none d-sm-block">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim,
-                                            metus nec fringilla...
+                                        <h5 class="fw-bold mb-2 text-truncate-2-lines">Why Food Matters</h5>
+                                        <p class="text-muted mb-0 small text-truncate-4-lines">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit... Lorem ipsum dolor
+                                            sit amet consectetur adipisicing elit. In, natus officiis! Asperiores eaque
+                                            vel inventore tempore laboriosam qui maxime harum est dolorem
+                                            necessitatibus, neque reiciendis aut eum, quasi accusantium? Nisi
+                                            perferendis architecto consequatur temporibus quae saepe perspiciatis,
+                                            quidem obcaecati totam rem cumque vitae modi exercitationem itaque
+                                            blanditiis voluptatibus illum! Laboriosam debitis sit deserunt nostrum
+                                            facere laborum quis doloremque? Magnam atque sunt ullam pariatur omnis rem
+                                            accusamus debitis reprehenderit magni reiciendis, animi assumenda alias
+                                            repellendus facilis architecto quas aliquid officiis harum eaque rerum?
+                                            Maiores tenetur quibusdam cupiditate. Aperiam quisquam, beatae sit nostrum
+                                            at provident laborum cumque inventore! Perferendis, eius debitis nemo
+                                            tenetur recusandae nesciunt, quam voluptates sit nisi accusantium vel
+                                            officia.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Small Blog 2 -->
-                        <div class="card border-0" style="background-color: rgb(248, 248, 253);">
-                            <div class="row g-0 h-100">
-                                <div class="col-4">
-                                    <a href="#" class="h-100 d-block">
-                                        <img src="images/b4.webp" class="w-100 h-100 object-fit-cover rounded-start"
-                                            alt="Small Blog Image 2">
+                        <div class="card border-0" style="background-color: rgb(248, 248, 253); overflow: hidden;">
+                            <div class="row g-0 align-items-start">
+                                <div class="col-auto me-2">
+                                    <a href="#" class="d-block" style="width: 196px; height: 192px; overflow: hidden;">
+                                        <img src="images/b4.webp"
+                                            style="width: 100%; height: 100%; object-fit: cover; display: block;"
+                                            class="rounded-start" alt="Small Blog Image 1">
                                     </a>
                                 </div>
-                                <div class="col-8">
-                                    <div class="card-body h-100 d-flex flex-column">
-                                        <div class="d-flex justify-content-between small text-muted mb-1">
+
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between small text-muted mb-2">
                                             <span>Oliver Smith</span>
                                             <span>20 Jan 2025</span>
                                         </div>
-                                        <div class="d-flex align-items-center justify-content-between mb-2">
-                                            <a href="#" class="text-decoration-none text-dark">
-                                                <h6 class="fw-bold mb-0">Why Food Matters Lorem ipsum dolor sit amet
-                                                </h6>
-                                            </a>
-                                            <a href="#" class="text-dark" aria-label="Read more">
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                        <p class="text-muted small mb-0 mt-auto d-none d-sm-block">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim,
-                                            metus nec fringilla...
+                                        <h5 class="fw-bold mb-2 text-truncate-2-lines">Why Food Matters</h5>
+                                        <p class="text-muted mb-0 small text-truncate-4-lines">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit... Lorem ipsum dolor
+                                            sit amet consectetur adipisicing elit. In, natus officiis! Asperiores eaque
+                                            vel inventore tempore laboriosam qui maxime harum est dolorem
+                                            necessitatibus, neque reiciendis aut eum, quasi accusantium? Nisi
+                                            perferendis architecto consequatur temporibus quae saepe perspiciatis,
+                                            quidem obcaecati totam rem cumque vitae modi exercitationem itaque
+                                            blanditiis voluptatibus illum! Laboriosam debitis sit deserunt nostrum
+                                            facere laborum quis doloremque? Magnam atque sunt ullam pariatur omnis rem
+                                            accusamus debitis reprehenderit magni reiciendis, animi assumenda alias
+                                            repellendus facilis architecto quas aliquid officiis harum eaque rerum?
+                                            Maiores tenetur quibusdam cupiditate. Aperiam quisquam, beatae sit nostrum
+                                            at provident laborum cumque inventore! Perferendis, eius debitis nemo
+                                            tenetur recusandae nesciunt, quam voluptates sit nisi accusantium vel
+                                            officia.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Small Blog 3 -->
-                        <div class="card border-0" style="background-color: rgb(248, 248, 253);">
-                            <div class="row g-0 h-100">
-                                <div class="col-4">
-                                    <a href="#" class="h-100 d-block">
-                                        <img src="images/b4.webp" class="w-100 h-100 object-fit-cover rounded-start"
-                                            alt="Small Blog Image 3">
+                        <div class="card border-0" style="background-color: rgb(248, 248, 253); overflow: hidden;">
+                            <div class="row g-0 align-items-start">
+                                <div class="col-auto me-2">
+                                    <a href="#" class="d-block" style="width: 196px; height: 192px; overflow: hidden;">
+                                        <img src="https://placehold.co/600x400"
+                                            style="width: 100%; height: 100%; object-fit: cover; display: block;"
+                                            class="rounded-start" alt="Small Blog Image 1">
                                     </a>
                                 </div>
-                                <div class="col-8">
-                                    <div class="card-body h-100 d-flex flex-column">
-                                        <div class="d-flex justify-content-between small text-muted mb-1">
+
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between small text-muted mb-2">
                                             <span>Oliver Smith</span>
                                             <span>20 Jan 2025</span>
                                         </div>
-                                        <div class="d-flex align-items-center justify-content-between mb-2">
-                                            <a href="#" class="text-decoration-none text-dark">
-                                                <h6 class="fw-bold mb-0">Why Food Matters Lorem ipsum dolor sit amet
-                                                </h6>
-                                            </a>
-                                            <a href="#" class="text-dark" aria-label="Read more">
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                        <p class="text-muted small mb-0 mt-auto d-none d-sm-block">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim,
-                                            metus nec fringilla...
+                                        <h5 class="fw-bold mb-2 text-truncate-2-lines">Why Food Matters</h5>
+                                        <p class="text-muted mb-0 small text-truncate-4-lines">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit... Lorem ipsum dolor
+                                            sit amet consectetur adipisicing elit. In, natus officiis! Asperiores eaque
+                                            vel inventore tempore laboriosam qui maxime harum est dolorem
+                                            necessitatibus, neque reiciendis aut eum, quasi accusantium? Nisi
+                                            perferendis architecto consequatur temporibus quae saepe perspiciatis,
+                                            quidem obcaecati totam rem cumque vitae modi exercitationem itaque
+                                            blanditiis voluptatibus illum! Laboriosam debitis sit deserunt nostrum
+                                            facere laborum quis doloremque? Magnam atque sunt ullam pariatur omnis rem
+                                            accusamus debitis reprehenderit magni reiciendis, animi assumenda alias
+                                            repellendus facilis architecto quas aliquid officiis harum eaque rerum?
+                                            Maiores tenetur quibusdam cupiditate. Aperiam quisquam, beatae sit nostrum
+                                            at provident laborum cumque inventore! Perferendis, eius debitis nemo
+                                            tenetur recusandae nesciunt, quam voluptates sit nisi accusantium vel
+                                            officia.
                                         </p>
                                     </div>
                                 </div>
@@ -843,65 +937,67 @@
         </section>
         <!-- logos -->
         <section class=" container py-5">
-            <div class="container text-center mb-4 px-0">
-                <p class="fw-semibold">
+            <div class=" text-center mb-4 px-0">
+                <p class="fw-semibold text-truncate-2-lines">
                     Delivering reliable affiliate growth for over 2,500 industry-leading brands.
                 </p>
             </div>
-
-            <div class="containe px-0">
-                <div class="logo-grid d-grid gap-5">
-                    <a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="https://placehold.co/1000x700" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a><a href="/" aria-label="Last Crumb Homepage" class="logo-link d-md-none">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
-                    </a>
-                    <a href="/" aria-label="Last Crumb Homepage" class="logo-link">
-                        <img src="images/Last-Crumb-Logo.webp" alt="Last Crumb Logo" class="w-100">
+            <div class="px-0">
+                <div class="logo-grid">
+                    <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="https://placehold.co/600x400" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
+                    </a> <a href="/" class="logo-link">
+                        <img src="images/crumb.png" class="img-ratio" alt="Last Crumb Logo">
                     </a>
                 </div>
             </div>
@@ -925,7 +1021,7 @@
                                 <div
                                     class="hover-overlay d-flex flex-column position-absolute justify-content-center align-items-center text-center">
                                     <h3 class="p fw-bolder mb-2">The Call of the Wild</h3>
-                                    <p class="small mb-4">
+                                    <p class="small mb-4 text-truncate-4-lines">
                                         Exploring sustainable travel and the rise of eco-friendly adventure tourism in
                                         the Dolomites.
                                     </p>
@@ -946,7 +1042,7 @@
                                 <div
                                     class="hover-overlay d-flex flex-column position-absolute justify-content-center align-items-center text-center">
                                     <h3 class="p fw-bolder mb-2">The Call of the Wild</h3>
-                                    <p class="small mb-4">
+                                    <p class="small mb-4 text-truncate-4-lines">
                                         Exploring sustainable travel and the rise of eco-friendly adventure tourism in
                                         the Dolomites.
                                     </p>
@@ -967,7 +1063,7 @@
                                 <div
                                     class="hover-overlay d-flex flex-column position-absolute justify-content-center align-items-center text-center">
                                     <h3 class="p fw-bolder mb-2">The Call of the Wild</h3>
-                                    <p class="small mb-4">
+                                    <p class="small mb-4 text-truncate-4-lines">
                                         Exploring sustainable travel and the rise of eco-friendly adventure tourism in
                                         the Dolomites.
                                     </p>
@@ -988,7 +1084,7 @@
                                 <div
                                     class="hover-overlay d-flex flex-column position-absolute justify-content-center align-items-center text-center">
                                     <h3 class="p fw-bolder mb-2">The Call of the Wild</h3>
-                                    <p class="small mb-4">
+                                    <p class="small mb-4 text-truncate-4-lines">
                                         Exploring sustainable travel and the rise of eco-friendly adventure tourism in
                                         the Dolomites.
                                     </p>
@@ -1009,7 +1105,7 @@
                                 <div
                                     class="hover-overlay d-flex flex-column position-absolute justify-content-center align-items-center text-center">
                                     <h3 class="p fw-bolder mb-2">The Call of the Wild</h3>
-                                    <p class="small mb-4">
+                                    <p class="small mb-4 text-truncate-4-lines">
                                         Exploring sustainable travel and the rise of eco-friendly adventure tourism in
                                         the Dolomites.
                                     </p>
@@ -1030,9 +1126,21 @@
                                 <div
                                     class="hover-overlay d-flex flex-column position-absolute justify-content-center align-items-center text-center">
                                     <h3 class="p fw-bolder mb-2">The Call of the Wild</h3>
-                                    <p class="small mb-4">
+                                    <p class="small mb-4 text-truncate-4-lines">
                                         Exploring sustainable travel and the rise of eco-friendly adventure tourism in
-                                        the Dolomites.
+                                        the Dolomites. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                                        nisi iure beatae veritatis assumenda impedit aspernatur hic odit quia, et
+                                        officiis cupiditate deleniti quos doloribus, omnis cumque harum ipsa inventore
+                                        accusamus nemo soluta ea voluptatem? Doloremque, officia tempore sunt
+                                        consequatur sapiente ad accusantium iste exercitationem et possimus consequuntur
+                                        illum non impedit magnam amet pariatur voluptas tempora quisquam distinctio
+                                        alias modi culpa excepturi quia nesciunt. Perspiciatis ratione deserunt maxime
+                                        praesentium, blanditiis fugiat incidunt neque qui, obcaecati et culpa impedit
+                                        unde nisi beatae dolorem fuga ullam reprehenderit, in quis animi! Omnis,
+                                        similique earum. Ipsum maiores corrupti, impedit quos at dicta accusamus
+                                        eveniet. In assumenda eaque molestias impedit deserunt. Mollitia beatae sit
+                                        debitis, ipsum eaque atque explicabo ad sint, architecto quia laborum temporibus
+                                        rem aperiam.
                                     </p>
                                     <a href="#"
                                         class="btn border border-1 border-dark fw-semibold shadow-sm px-4 py-2 w-75 w-md-auto">
@@ -1544,7 +1652,7 @@
             </div>
             <div class="d-none d-lg-block">
                 <div class="row">
-                    <div class="col-lg-1">
+                    <div class="col-lg-2">
                         <ul class="list-unstyled">
                             <li class="mb-3"><a href="#"
                                     class="fw-bolder text-white text-decoration-none">Publishers</a></li>
@@ -1553,7 +1661,7 @@
                             <li class="mb-3"><a href="#" class="text-white text-decoration-none">About Us</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-lg-2">
                         <ul class="list-unstyled">
                             <li class="mb-3"><a href="#" class="fw-bolder text-white text-decoration-none">Blogs</a>
                             </li>
@@ -1562,7 +1670,7 @@
                             <li class="mb-3"><a href="#" class="text-white text-decoration-none">Product</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-lg-2">
                         <ul class="list-unstyled">
                             <li class="mb-3"><a href="#"
                                     class="fw-bolder text-white text-decoration-none">Categories</a></li>
@@ -1570,7 +1678,7 @@
                             <li class="mb-3"><a href="#" class="text-white text-decoration-none">Support</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-8 text-end ms-auto">
+                    <div class="col-lg-6 text-end ms-auto">
                         <div class="d-flex justify-content-end align-items-center mb-3">
                             <p class="fw-bold mb-0 me-1">Follow Us On:</p>
 
