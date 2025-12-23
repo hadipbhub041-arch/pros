@@ -191,6 +191,20 @@
       max-height: calc(4 * 1.5em);
   }
 
+  .text-truncate-lines {
+      --lines: 4;
+      /* default */
+      --lh: 1.5em;
+
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: var(--lines);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: var(--lh);
+      max-height: calc(var(--lines) * var(--lh));
+  }
+
   .text-truncate-2-lines {
       display: -webkit-box;
       -webkit-line-clamp: 2;
@@ -237,7 +251,6 @@
   @media (min-width: 992px) {
       .reviews-wrapper {
           border: 1px solid #ddd;
-          border-radius: 8px;
       }
 
       .image-fixed-size {
@@ -253,8 +266,6 @@
       }
 
       .review-card {
-          padding-left: 0 !important;
-          padding-right: 0 !important;
           border-bottom: 1px solid #eee;
       }
 
@@ -264,7 +275,7 @@
       }
 
       .details-toggle-wrapper {
-          margin-left: 40%;
+          margin: auto;
       }
   }
 
@@ -272,7 +283,8 @@
       .image-fixed-size {
           width: 100%;
       }
-        .rating-section {
+
+      .rating-section {
           display: none;
       }
   }
@@ -291,7 +303,7 @@
   /* Logo Grid */
   .logo-grid {
       display: grid;
-      grid-template-columns: repeat(7, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 1.5rem;
       justify-items: center;
       align-items: center;
@@ -300,10 +312,9 @@
   }
 
   .img-ratio {
-      aspect-ratio: 182 / 50;
+      aspect-ratio: 273 / 75;
       width: 100%;
       max-width: 182px;
-
       height: auto;
       object-fit: contain;
   }
@@ -315,7 +326,7 @@
       }
 
       .img-ratio {
-          max-width: 130px;
+          max-width: 150px;
       }
   }
 
@@ -343,6 +354,11 @@
       opacity: 0;
       transition: opacity .4s ease-in-out;
       color: #212529;
+  }
+
+  .hover-btn {
+      background-color: white;
+      color: black;
   }
 
   .card-container:hover .hover-overlay {
@@ -442,4 +458,7 @@
       to {
           transform: translateX(0);
       }
-  }
+  }.footer-border-full {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}

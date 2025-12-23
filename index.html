@@ -16,71 +16,73 @@
 </head>
 
 <body style="background-color: rgb(252, 252, 252);">
-    <header class="container">
-        <div class="row align-items-center py-2">
-            <div class="col-6 col-lg-3 order-1">
-                <img src="/images/Logo.webp" width="130" height="40" alt="Logo">
-            </div>
-            <div class="col-12 col-lg-5 ms-lg-auto order-3 order-lg-2 mt-2 mb-2">
-                <div class="position-relative">
-                    <div class="input-group shadow-sm">
-                        <input id="searchInput" type="search" class="form-control border-end-0"
-                            placeholder="Search Categories" autocomplete="off">
-                        <span class="input-group-text bg-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-search text-muted" viewBox="0 0 16 16">
-                                <path
-                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                            </svg>
-                        </span>
-                    </div>
-                    <div id="suggestionsList" class="list-group position-absolute w-100 shadow bg-white"
-                        style="display:none; z-index:1050;">
+    <header>
+        <div class="container">
+            <div class="row align-items-center py-2 bg-white">
+                <div class="col-6 col-lg-3 order-1">
+                    <a href="#"> <img src="/images/Logo.webp" width="130" height="40" alt="Logo"></a>
+                </div>
+                <div class="col-12 col-lg-5 ms-lg-auto order-3 order-lg-2 mt-2 mb-2">
+                    <div class="position-relative">
+                        <div class="input-group shadow-sm">
+                            <input id="searchInput" type="search" class="form-control border-end-0"
+                                placeholder="Search Categories" autocomplete="off">
+                            <span class="input-group-text bg-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search text-muted" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div id="suggestionsList" class="list-group position-absolute w-100 shadow bg-white"
+                            style="display:none; z-index:1050;">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6 col-lg-3 order-2 order-lg-2 d-flex justify-content-end d-lg-none">
-                <button class="navbar-toggler d-lg-none border-0 p-0" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#mainNav" aria-controls="mainNav">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24"
-                        stroke="black" stroke-width="2" class="burger-icon">
-                        <line x1="3" y1="6" x2="21" y2="6" />
-                        <line x1="3" y1="12" x2="21" y2="12" />
-                        <line x1="3" y1="18" x2="21" y2="18" />
-                    </svg>
-                </button>
+                <div class="col-6 col-lg-3 order-2 order-lg-2 d-flex justify-content-end d-lg-none">
+                    <button class="navbar-toggler d-lg-none border-0 p-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mainNav" aria-controls="mainNav">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24"
+                            stroke="black" stroke-width="2" class="burger-icon">
+                            <line x1="3" y1="6" x2="21" y2="6" />
+                            <line x1="3" y1="12" x2="21" y2="12" />
+                            <line x1="3" y1="18" x2="21" y2="18" />
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
         <!-- NAV ROW -->
-        <div class="row full-width-border m-0">
-            <div class="col-12">
-                <div class="offcanvas offcanvas-lg offcanvas-end custom-nav-wrapper" tabindex="-1" id="mainNav"
-                    style="top: 6%;">
+        <div class="container">
+            <div class="row full-width-border m-0">
+                <div class="col-12">
+                    <div class="offcanvas offcanvas-lg offcanvas-end custom-nav-wrapper" tabindex="-1" id="mainNav"
+                        style="top: 6%;">
 
-                    <div class="offcanvas-body py-2">
-                        <button type="button" class="btn-close btn-close-white ms-auto d-lg-none"
-                            data-bs-dismiss="offcanvas" aria-label="Close">
-                        </button>
+                        <div class="offcanvas-body py-2">
+                            <button type="button" class="btn-close btn-close-white ms-auto d-lg-none"
+                                data-bs-dismiss="offcanvas" aria-label="Close">
+                            </button>
 
-                        <ul class="navbar-nav flex-column flex-lg-row justify-content-between text-center me-5">
-                            <li class="nav-item px-lg-3"><a class="nav-link" href="#">All</a></li>
-                            <li class="nav-item px-lg-3"><a class="nav-link" href="#">Travel</a></li>
-                            <li class="nav-item px-lg-3"><a class="nav-link" href="#">Things to do</a></li>
-                            <li class="nav-item px-lg-3"><a class="nav-link" href="#">Beauty & Spa</a></li>
-                            <li class="nav-item px-lg-3"><a class="nav-link" href="#">Beverages</a></li>
-                            <li class="nav-item px-lg-3"><a class="nav-link" href="#">Massage</a></li>
-                            <li class="nav-item px-lg-3"><a class="nav-link" href="#">Goods</a></li>
-                        </ul>
+                            <ul class="navbar-nav flex-column flex-lg-row justify-content-between text-center me-5">
+                                <li class="nav-item px-lg-3"><a class="nav-link" href="#">All</a></li>
+                                <li class="nav-item px-lg-3"><a class="nav-link" href="#">Travel</a></li>
+                                <li class="nav-item px-lg-3"><a class="nav-link" href="#">Things to do</a></li>
+                                <li class="nav-item px-lg-3"><a class="nav-link" href="#">Beauty & Spa</a></li>
+                                <li class="nav-item px-lg-3"><a class="nav-link" href="#">Beverages</a></li>
+                                <li class="nav-item px-lg-3"><a class="nav-link" href="#">Massage</a></li>
+                                <li class="nav-item px-lg-3"><a class="nav-link" href="#">Goods</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </header>
-
     <main>
         <section>
-            <div class="py-4 d-lg-none">
+            <div class="py-1 d-lg-none">
                 <div id="newMobileCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true"
                     data-bs-interval="5000">
                     <div class="carousel-inner mobile-fixed-height">
@@ -119,7 +121,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid py-4 d-none d-lg-block overflow-hidden gx-0">
+            <div class="container-fluid d-none d-lg-block overflow-hidden gx-0">
                 <div class="row g-2">
                     <div class="col-lg-5">
                         <a href="#"> <img src="images/Rectangle 9.webp"
@@ -151,206 +153,169 @@
         <!-- popular  stores -->
         <section>
             <div class="container py-5">
-                <h2 class="fw-semibold fs-3 fs-md-2">
+                <h2 class="fw-semibold fs-2 fs-md-2">
                     Popular stores
                 </h2>
                 <div class="logo-slider overflow-hidden position-relative">
                     <div class="logo-slider-wrapper pt-3 overflow-hidden position-relative">
                         <div class="logo-slider-track d-flex">
 
-                            <a href="">
-                                <div
+                            <div>
+                                <a href="#"
                                     class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
                                     <img src="images/card1.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
-                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
-                                    <img src="https://placehold.co/1000x700" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a> <a href="">
-                                <div
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
                                     class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
                                     <img src="images/card1.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
-                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
-                                    <img src="https://placehold.co/1000x700" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a> <a href="">
-                                <div
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
                                     class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
                                     <img src="images/card1.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
-                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
-                                    <img src="https://placehold.co/1000x700" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a> <a href="">
-                                <div
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
                                     class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
                                     <img src="images/card1.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
-                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
-                                    <img src="https://placehold.co/1000x700" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
-                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
-                                    <img src="images/card3.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
-                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
-                                    <img src="images/card5.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
-                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
-                                    <img src="images/card6.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
-                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
-                                    <img src="images/card3.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
                                     class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
                                     <img src="images/card1.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
-                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
-                                    <img src="images/card7.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
-                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
-                                    <img src="images/card3.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
-                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
-                                    <img src="https://placehold.co/1000x700" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
                                     class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
                                     <img src="images/card1.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
-                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
-                                    <img src="images/card3.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
                                     class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
                                     <img src="images/card1.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
                                     class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
                                     <img src="images/card1.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
                                     class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
                                     <img src="images/card1.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
-                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
-                                    <img src="images/card6.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
                                     class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
                                     <img src="images/card1.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
                                     class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
                                     <img src="images/card1.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
-                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
-                                    <img src="images/card5.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
-                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
-                                    <img src="images/card5.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
                                     class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
                                     <img src="images/card1.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
-                            <a href="">
-                                <div
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
                                     class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
-                                    <img src="images/card2.webp" alt="Store Logo"
-                                        class="object-fit-contain h-auto w-auto">
-                                </div>
-                            </a>
+                                    <img src="images/card1.webp" alt="Store Logo"
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
+                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo"
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
+                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo"
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
+                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo"
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
+                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo"
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
+                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo"
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
+                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo"
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
+                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo"
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
+                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo"
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
+                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo"
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
+                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo"
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
+                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo"
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
+                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo"
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
+                            <div>
+                                <a href="#"
+                                    class="logo-item bg-white p-2 d-flex align-items-center justify-content-center flex-shrink-0 border border-black rounded">
+                                    <img src="images/card1.webp" alt="Store Logo"
+                                        class="object-fit-contain h-auto w-auto"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -359,15 +324,15 @@
         <!-- product reviews -->
         <section class="container py-5 mt-5">
             <div class="d-flex justify-content-between mb-3">
-                <h2 class="h2 fs-3 fs-md-2 fw-semibold text-truncate-1-lines">Product Reviews</h2>
+                <h2 class="h2 fs-3 fs-md-2 fw-semibold text-truncate-lines" style="--lines:1;">Product Reviews</h2>
                 <a href="#">
-                    <button class="btn btn-dark btn-sm px-2 rounded-2">
+                    <button class="btn btn-sm px-2 rounded-2 py-2" style="background-color: black; color: white;">
                         See All <i class="px-1 fa-solid fa-arrow-right"></i>
                     </button>
                 </a>
             </div>
             <div class="container py-4 overflow-hidden px-0">
-                <div class="reviews-wrapper overflow-hidden">
+                <div class="reviews-wrapper overflow-hidden bg-white">
                     <div class="review-card p-3 p-lg-4 px-lg-5">
                         <div class="row align-items-center gx-0 gx-md-4">
                             <div class="col-md-auto col-12 mb-3 mb-md-0 d-flex justify-content-center">
@@ -381,7 +346,7 @@
                             </div>
                             <div class="col-md col-12 px-md-4">
                                 <a href="#" class="text-decoration-none text-dark">
-                                    <p class="fw-bold mb-2 text-truncate-2-lines">Bill Board</p>
+                                    <p class="fw-bold mb-2 text-truncate-lines" style="--lines:1;">Bill Board</p>
                                 </a>
                                 <div class="review-text-container d-none d-md-block">
                                     <p class="text-muted review-desc text-truncate-4-lines mb-0">
@@ -394,41 +359,49 @@
 
                             <div class="col-12 col-md-12 col-lg-3 mt-4 mt-lg-0 ps-lg-4 rating-section">
                                 <div class="row row-cols-md-5 row-cols-lg-1 g-3 align-items-end">
-                                    <div class="col fs-3 text-end text-warning"> 5★</div>
+                                    <div class="col-md-12 fs-3 text-end d-md-block order-first order-md-last text-center"
+                                        style="color:rgb(241,226, 20);">
+                                        <span class="text-dark fw-bold d-md-block">5.0</span>★
+                                    </div>
+
+
                                     <div class="col">
                                         <div
-                                            class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+                                            class="d-flex rating fs-4 flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
 
                                             <span
-                                                class="small fw-bold text-nowrap star-icon user-select-none filled">5.0
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled"><span
+                                                    class="text-dark fw-bold">5.0</span>
                                                 ★</span>
                                             <div class="progress rounded-0 flex-grow-1 w-100"
-                                                style="height: 8px; background-color: #eee;">
+                                                style="height: 10px; background-color: #eee;">
                                                 <div class="progress-bar bg-black" style="width: 90%;"></div>
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="col">
                                         <div
-                                            class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+                                            class="d-flex rating fs-4 flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+
                                             <span
-                                                class="small fw-bold text-nowrap star-icon user-select-none filled">4.0
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled"><span
+                                                    class="text-dark fw-bold">4.0</span>
                                                 ★</span>
-                                            <div class="progress rounded-0 flex-grow-1 w-100l"
-                                                style="height: 8px; background-color: #eee;">
-                                                <div class="progress-bar bg-black" style="width: 80%;"></div>
+                                            <div class="progress rounded-0 flex-grow-1 w-100"
+                                                style="height: 10px; background-color: #eee;">
+                                                <div class="progress-bar bg-black" style="width: 90%;"></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div
-                                            class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+                                            class="d-flex rating fs-4 flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
                                             <span
-                                                class="small fw-bold text-nowrap star-icon user-select-none filled">3.0
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled"><span
+                                                    class="text-dark fw-bold">3.0</span>
                                                 ★</span>
                                             <div class="progress rounded-0 flex-grow-1 w-100"
-                                                style="height: 8px; background-color: #eee;">
+                                                style="height: 10px; background-color: #eee;">
                                                 <div class="progress-bar bg-black" style="width: 70%;"></div>
                                             </div>
                                         </div>
@@ -436,24 +409,26 @@
 
                                     <div class="col">
                                         <div
-                                            class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+                                            class="d-flex rating fs-4 flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
                                             <span
-                                                class="small fw-bold text-nowrap star-icon user-select-none filled">2.0
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled"><span
+                                                    class="text-dark fw-bold">2.0</span>
                                                 ★</span>
                                             <div class="progress rounded-0 flex-grow-1 w-100"
-                                                style="height: 8px; background-color: #eee;">
+                                                style="height: 10px; background-color: #eee;">
                                                 <div class="progress-bar bg-black" style="width: 40%;"></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col">
-                                        <div class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center"
+                                        <div class="d-flex rating fs-4 flex-column flex-lg-row align-items-start align-items-lg-center"
                                             style="gap: 11px;">
                                             <span
-                                                class="small fw-bold text-nowrap star-icon user-select-none filled">1.0
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled"><span
+                                                    class="text-dark fw-bold">1.0</span>
                                                 ★</span>
                                             <div class="progress rounded-0 flex-grow-1 w-100"
-                                                style="height: 8px; background-color: #eee;">
+                                                style="height: 10px; background-color: #eee;">
                                                 <div class="progress-bar bg-black" style="width: 40%;"></div>
                                             </div>
                                         </div>
@@ -464,7 +439,7 @@
                         <div class="details-toggle-wrapper border-top border-3 text-center d-none d-md-block mt-3 w-25">
                             <span class="details-toggle user-select-none text-dark fw-semibold small"
                                 data-bs-toggle="collapse" data-bs-target="#detailsContent">
-                                Details ▾
+                                Read More
                             </span>
                         </div>
 
@@ -509,41 +484,49 @@
                             </div>
                             <div class="col-12 col-md-12 col-lg-3 mt-4 mt-lg-0 ps-lg-4 rating-section">
                                 <div class="row row-cols-md-5 row-cols-lg-1 g-3 align-items-end">
-                                    <div class="col fs-3 text-end text-warning"> 5★</div>
+                                    <div class="col-md-12 fs-3 text-end d-md-block order-lg-first text-lg-end order-md-last text-center"
+                                        style="color:rgb(241,226, 20);">
+                                        <span class="text-dark fw-bold d-md-block">5.0</span>★
+                                    </div>
+
+
                                     <div class="col">
                                         <div
-                                            class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+                                            class="d-flex rating fs-4 flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
 
                                             <span
-                                                class="small fw-bold text-nowrap star-icon user-select-none filled">5.0
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled"><span
+                                                    class="text-dark fw-bold">5.0</span>
                                                 ★</span>
                                             <div class="progress rounded-0 flex-grow-1 w-100"
-                                                style="height: 8px; background-color: #eee;">
+                                                style="height: 10px; background-color: #eee;">
                                                 <div class="progress-bar bg-black" style="width: 90%;"></div>
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="col">
                                         <div
-                                            class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+                                            class="d-flex rating fs-4 flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+
                                             <span
-                                                class="small fw-bold text-nowrap star-icon user-select-none filled">4.0
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled"><span
+                                                    class="text-dark fw-bold">4.0</span>
                                                 ★</span>
-                                            <div class="progress rounded-0 flex-grow-1 w-100l"
-                                                style="height: 8px; background-color: #eee;">
-                                                <div class="progress-bar bg-black" style="width: 80%;"></div>
+                                            <div class="progress rounded-0 flex-grow-1 w-100"
+                                                style="height: 10px; background-color: #eee;">
+                                                <div class="progress-bar bg-black" style="width: 90%;"></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div
-                                            class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+                                            class="d-flex rating fs-4 flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
                                             <span
-                                                class="small fw-bold text-nowrap star-icon user-select-none filled">3.0
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled"><span
+                                                    class="text-dark fw-bold">3.0</span>
                                                 ★</span>
                                             <div class="progress rounded-0 flex-grow-1 w-100"
-                                                style="height: 8px; background-color: #eee;">
+                                                style="height: 10px; background-color: #eee;">
                                                 <div class="progress-bar bg-black" style="width: 70%;"></div>
                                             </div>
                                         </div>
@@ -551,24 +534,26 @@
 
                                     <div class="col">
                                         <div
-                                            class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+                                            class="d-flex rating fs-4 flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
                                             <span
-                                                class="small fw-bold text-nowrap star-icon user-select-none filled">2.0
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled"><span
+                                                    class="text-dark fw-bold">2.0</span>
                                                 ★</span>
                                             <div class="progress rounded-0 flex-grow-1 w-100"
-                                                style="height: 8px; background-color: #eee;">
+                                                style="height: 10px; background-color: #eee;">
                                                 <div class="progress-bar bg-black" style="width: 40%;"></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col">
-                                        <div class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center"
+                                        <div class="d-flex rating fs-4 flex-column flex-lg-row align-items-start align-items-lg-center"
                                             style="gap: 11px;">
                                             <span
-                                                class="small fw-bold text-nowrap star-icon user-select-none filled">1.0
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled"><span
+                                                    class="text-dark fw-bold">1.0</span>
                                                 ★</span>
                                             <div class="progress rounded-0 flex-grow-1 w-100"
-                                                style="height: 8px; background-color: #eee;">
+                                                style="height: 10px; background-color: #eee;">
                                                 <div class="progress-bar bg-black" style="width: 40%;"></div>
                                             </div>
                                         </div>
@@ -579,7 +564,7 @@
                         <div class="details-toggle-wrapper border-top border-3 text-center d-none d-md-block mt-3 w-25">
                             <span class="details-toggle user-select-none text-dark fw-semibold small"
                                 data-bs-toggle="collapse" data-bs-target="#detailsContent3">
-                                Details ▾
+                                Read More
                             </span>
                         </div>
 
@@ -626,41 +611,49 @@
 
                             <div class="col-12 col-md-12 col-lg-3 mt-4 mt-lg-0 ps-lg-4 rating-section">
                                 <div class="row row-cols-md-5 row-cols-lg-1 g-3 align-items-end">
-                                    <div class="col fs-3 text-end text-warning"> 5★</div>
+                                    <div class="col-md-12 fs-3 text-end d-md-block order-first order-md-last text-center"
+                                        style="color:rgb(241,226, 20);">
+                                        <span class="text-dark fw-bold d-md-block">5.0</span>★
+                                    </div>
+
+
                                     <div class="col">
                                         <div
-                                            class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+                                            class="d-flex rating fs-4 flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
 
                                             <span
-                                                class="small fw-bold text-nowrap star-icon user-select-none filled">5.0
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled"><span
+                                                    class="text-dark fw-bold">5.0</span>
                                                 ★</span>
                                             <div class="progress rounded-0 flex-grow-1 w-100"
-                                                style="height: 8px; background-color: #eee;">
+                                                style="height: 10px; background-color: #eee;">
                                                 <div class="progress-bar bg-black" style="width: 90%;"></div>
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="col">
                                         <div
-                                            class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+                                            class="d-flex rating fs-4 flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+
                                             <span
-                                                class="small fw-bold text-nowrap star-icon user-select-none filled">4.0
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled"><span
+                                                    class="text-dark fw-bold">4.0</span>
                                                 ★</span>
-                                            <div class="progress rounded-0 flex-grow-1 w-100l"
-                                                style="height: 8px; background-color: #eee;">
-                                                <div class="progress-bar bg-black" style="width: 80%;"></div>
+                                            <div class="progress rounded-0 flex-grow-1 w-100"
+                                                style="height: 10px; background-color: #eee;">
+                                                <div class="progress-bar bg-black" style="width: 90%;"></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div
-                                            class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+                                            class="d-flex rating fs-4 flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
                                             <span
-                                                class="small fw-bold text-nowrap star-icon user-select-none filled">3.0
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled"><span
+                                                    class="text-dark fw-bold">3.0</span>
                                                 ★</span>
                                             <div class="progress rounded-0 flex-grow-1 w-100"
-                                                style="height: 8px; background-color: #eee;">
+                                                style="height: 10px; background-color: #eee;">
                                                 <div class="progress-bar bg-black" style="width: 70%;"></div>
                                             </div>
                                         </div>
@@ -668,24 +661,26 @@
 
                                     <div class="col">
                                         <div
-                                            class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+                                            class="d-flex rating fs-4 flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
                                             <span
-                                                class="small fw-bold text-nowrap star-icon user-select-none filled">2.0
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled"><span
+                                                    class="text-dark fw-bold">2.0</span>
                                                 ★</span>
                                             <div class="progress rounded-0 flex-grow-1 w-100"
-                                                style="height: 8px; background-color: #eee;">
+                                                style="height: 10px; background-color: #eee;">
                                                 <div class="progress-bar bg-black" style="width: 40%;"></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col">
-                                        <div class="d-flex rating fs-4 m-1-row flex-column flex-lg-row align-items-start align-items-lg-center"
+                                        <div class="d-flex rating fs-4 flex-column flex-lg-row align-items-start align-items-lg-center"
                                             style="gap: 11px;">
                                             <span
-                                                class="small fw-bold text-nowrap star-icon user-select-none filled">1.0
+                                                class="small fw-bold text-nowrap star-icon user-select-none filled"><span
+                                                    class="text-dark fw-bold">1.0</span>
                                                 ★</span>
                                             <div class="progress rounded-0 flex-grow-1 w-100"
-                                                style="height: 8px; background-color: #eee;">
+                                                style="height: 10px; background-color: #eee;">
                                                 <div class="progress-bar bg-black" style="width: 40%;"></div>
                                             </div>
                                         </div>
@@ -696,7 +691,7 @@
                         <div class="details-toggle-wrapper border-top border-3 text-center d-none d-md-block mt-3 w-25">
                             <span class="details-toggle user-select-none text-dark fw-semibold small"
                                 data-bs-toggle="collapse" data-bs-target="#detailsContent1">
-                                Details ▾
+                                Read More
                             </span>
                         </div>
 
@@ -725,7 +720,8 @@
             <div class="container px-0 d-flex justify-content-between align-items-center mb-4">
                 <h2 class="fw-semibold text-truncate-1-lines
                 fs-3 fs-md-2">Recent <span style="color: rgb(18, 27, 184);">Blogs</span></h2>
-                <a href="#"><button class="btn btn-dark btn-sm px-2 rounded-2">See All <i
+                <a href="#"><button class="btn btn-sm px-2 rounded-2 py-2"
+                        style="background-color: black; color: white;">See All <i
                             class="px-1 fa-solid fa-arrow-right"></i></button></a>
             </div>
             <div class="d-flex flex-nowrap overflow-auto d-md-none hide-scrollbar pb-2">
@@ -832,23 +828,24 @@
 
                 <div class="col-12 col-lg-6">
                     <div class="h-100 d-flex flex-column justify-content-between gap-3">
-                        <div class="card border-0" style="background-color: rgb(248, 248, 253); overflow: hidden;">
-                            <div class="row g-0 align-items-start">
+                        <div class="card rounded-0 border-0"
+                            style="background-color: rgb(248, 248, 253); overflow: hidden;">
+                            <div class="row rounded-0 g-0 align-items-start">
                                 <div class="col-auto me-2">
                                     <a href="#" class="d-block" style="width: 196px; height: 192px; overflow: hidden;">
                                         <img src="images/b4.webp"
                                             style="width: 100%; height: 100%; object-fit: cover; display: block;"
-                                            class="rounded-start" alt="Small Blog Image 1">
+                                            alt="Small Blog Image 1">
                                     </a>
                                 </div>
 
                                 <div class="col">
-                                    <div class="card-body">
+                                    <div class="card-body px-4">
                                         <div class="d-flex justify-content-between small text-muted mb-2">
                                             <span>Oliver Smith</span>
                                             <span>20 Jan 2025</span>
                                         </div>
-                                        <h5 class="fw-bold mb-2 text-truncate-2-lines">Why Food Matters</h5>
+                                        <h5 class="fw-semibold mb-2 text-truncate-2-lines">Why Food Matters</h5>
                                         <p class="text-muted mb-0 small text-truncate-4-lines">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit... Lorem ipsum dolor
                                             sit amet consectetur adipisicing elit. In, natus officiis! Asperiores eaque
@@ -870,23 +867,24 @@
                             </div>
                         </div>
 
-                        <div class="card border-0" style="background-color: rgb(248, 248, 253); overflow: hidden;">
+                        <div class="card border-0 rounded-0"
+                            style="background-color: rgb(248, 248, 253); overflow: hidden;">
                             <div class="row g-0 align-items-start">
                                 <div class="col-auto me-2">
                                     <a href="#" class="d-block" style="width: 196px; height: 192px; overflow: hidden;">
                                         <img src="images/b4.webp"
                                             style="width: 100%; height: 100%; object-fit: cover; display: block;"
-                                            class="rounded-start" alt="Small Blog Image 1">
+                                            alt="Small Blog Image 1">
                                     </a>
                                 </div>
 
                                 <div class="col">
-                                    <div class="card-body">
+                                    <div class="card-body px-4">
                                         <div class="d-flex justify-content-between small text-muted mb-2">
                                             <span>Oliver Smith</span>
                                             <span>20 Jan 2025</span>
                                         </div>
-                                        <h5 class="fw-bold mb-2 text-truncate-2-lines">Why Food Matters</h5>
+                                        <h5 class="fw-semibold mb-2 text-truncate-2-lines">Why Food Matters</h5>
                                         <p class="text-muted mb-0 small text-truncate-4-lines">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit... Lorem ipsum dolor
                                             sit amet consectetur adipisicing elit. In, natus officiis! Asperiores eaque
@@ -907,23 +905,24 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card border-0" style="background-color: rgb(248, 248, 253); overflow: hidden;">
+                        <div class="card rounded-0 border-0"
+                            style="background-color: rgb(248, 248, 253); overflow: hidden;">
                             <div class="row g-0 align-items-start">
                                 <div class="col-auto me-2">
                                     <a href="#" class="d-block" style="width: 196px; height: 192px; overflow: hidden;">
                                         <img src="https://placehold.co/600x400"
                                             style="width: 100%; height: 100%; object-fit: cover; display: block;"
-                                            class="rounded-start" alt="Small Blog Image 1">
+                                            alt="Small Blog Image 1">
                                     </a>
                                 </div>
 
                                 <div class="col">
-                                    <div class="card-body">
+                                    <div class="card-body px-4">
                                         <div class="d-flex justify-content-between small text-muted mb-2">
                                             <span>Oliver Smith</span>
                                             <span>20 Jan 2025</span>
                                         </div>
-                                        <h5 class="fw-bold mb-2 text-truncate-2-lines">Why Food Matters</h5>
+                                        <h5 class="fw-semibold mb-2 text-truncate-2-lines">Why Food Matters</h5>
                                         <p class="text-muted mb-0 small text-truncate-4-lines">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit... Lorem ipsum dolor
                                             sit amet consectetur adipisicing elit. In, natus officiis! Asperiores eaque
@@ -951,7 +950,7 @@
         <!-- logos -->
         <section class=" container py-5">
             <div class=" text-center mb-4 px-0">
-                <p class="fw-semibold text-truncate-2-lines">
+                <p class="fw-semibold fs-4 text-truncate-2-lines">
                     Delivering reliable affiliate growth for over 2,500 industry-leading brands.
                 </p>
             </div>
@@ -1020,7 +1019,8 @@
             <div class="container py-3">
                 <div class="d-flex justify-content-between align-items-center mb-4">
                     <h2 class="fw-semibold fs-3 fs-md-2">Recent News & articles</h2>
-                    <a href="#"><button class="btn btn-dark btn-sm px-2 rounded-2">See All <i
+                    <a href="#"><button class="btn btn-sm px-2 rounded-2 py-2"
+                            style="background-color: black; color: white;">See All <i
                                 class="px-1 fa-solid fa-arrow-right"></i></button>
                     </a>
                 </div>
@@ -1033,13 +1033,31 @@
 
                                 <div
                                     class="hover-overlay d-flex flex-column position-absolute justify-content-center align-items-center text-center">
-                                    <h3 class="p fw-bolder mb-2">The Call of the Wild</h3>
-                                    <p class="small mb-4 text-truncate-4-lines">
+                                    <h3 class="p fw-bolder mb-2">The Wild</h3>
+                                    <p class="small mb-4 text-truncate-lines px-md-5 px-2" style="--lines: 6;">
                                         Exploring sustainable travel and the rise of eco-friendly adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
                                         the Dolomites.
                                     </p>
                                     <a href="#"
-                                        class="btn border border-1 border-dark fw-semibold shadow-sm px-4 py-2 w-75 w-md-auto">
+                                        class="btn border hover-btn border-1 border-dark fw-semibold shadow-sm px-4 py-2 w-75 w-md-auto">
                                         View Story
                                     </a>
                                 </div>
@@ -1054,13 +1072,31 @@
 
                                 <div
                                     class="hover-overlay d-flex flex-column position-absolute justify-content-center align-items-center text-center">
-                                    <h3 class="p fw-bolder mb-2">The Call of the Wild</h3>
-                                    <p class="small mb-4 text-truncate-4-lines">
+                                    <h3 class="p fw-bolder mb-2">The Wild</h3>
+                                    <p class="small mb-4 text-truncate-lines px-md-5 px-2" style="--lines: 6;">
                                         Exploring sustainable travel and the rise of eco-friendly adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
                                         the Dolomites.
                                     </p>
                                     <a href="#"
-                                        class="btn border border-1 border-dark fw-semibold shadow-sm px-4 py-2 w-75 w-md-auto">
+                                        class="btn border hover-btn border-1 border-dark fw-semibold shadow-sm px-4 py-2 w-75 w-md-auto">
                                         View Story
                                     </a>
                                 </div>
@@ -1068,20 +1104,38 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-4">
-                        <div class="grid-card-wrapper w-100 overflow-hidden w-100 h-100 d-none d-sm-block">
+                        <div class="grid-card-wrapper w-100 overflow-hidden w-100 h-100">
                             <div class="card-container position-relative w-100">
                                 <img src="images/card.webp" alt="Group of friends hiking in the mountains"
                                     class="card-image object-fit-cover w-100 h-100 d-block" loading="lazy">
 
                                 <div
                                     class="hover-overlay d-flex flex-column position-absolute justify-content-center align-items-center text-center">
-                                    <h3 class="p fw-bolder mb-2">The Call of the Wild</h3>
-                                    <p class="small mb-4 text-truncate-4-lines">
+                                    <h3 class="p fw-bolder mb-2">The Wild</h3>
+                                    <p class="small mb-4 text-truncate-lines px-md-5 px-2" style="--lines: 6;">
                                         Exploring sustainable travel and the rise of eco-friendly adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
                                         the Dolomites.
                                     </p>
                                     <a href="#"
-                                        class="btn border border-1 border-dark fw-semibold shadow-sm px-4 py-2 w-75 w-md-auto">
+                                        class="btn border hover-btn border-1 border-dark fw-semibold shadow-sm px-4 py-2 w-75 w-md-auto">
                                         View Story
                                     </a>
                                 </div>
@@ -1089,20 +1143,38 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-4">
-                        <div class="grid-card-wrapper w-100 overflow-hidden w-100 h-100 d-none d-sm-block">
+                        <div class="grid-card-wrapper w-100 overflow-hidden w-100 h-100">
                             <div class="card-container position-relative w-100">
                                 <img src="images/card.webp" alt="Group of friends hiking in the mountains"
                                     class="card-image object-fit-cover w-100 h-100 d-block" loading="lazy">
 
                                 <div
                                     class="hover-overlay d-flex flex-column position-absolute justify-content-center align-items-center text-center">
-                                    <h3 class="p fw-bolder mb-2">The Call of the Wild</h3>
-                                    <p class="small mb-4 text-truncate-4-lines">
+                                    <h3 class="p fw-bolder mb-2">The Wild</h3>
+                                    <p class="small mb-4 text-truncate-lines px-md-5 px-2" style="--lines: 6;">
                                         Exploring sustainable travel and the rise of eco-friendly adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
                                         the Dolomites.
                                     </p>
                                     <a href="#"
-                                        class="btn border border-1 border-dark fw-semibold shadow-sm px-4 py-2 w-75 w-md-auto">
+                                        class="btn border hover-btn border-1 border-dark fw-semibold shadow-sm px-4 py-2 w-75 w-md-auto">
                                         View Story
                                     </a>
                                 </div>
@@ -1110,20 +1182,38 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-4">
-                        <div class="grid-card-wrapper w-100 overflow-hidden w-100 h-100 d-none d-sm-block">
+                        <div class="grid-card-wrapper w-100 overflow-hidden w-100 h-100">
                             <div class="card-container position-relative w-100">
                                 <img src="images/card.webp" alt="Group of friends hiking in the mountains"
                                     class="card-image object-fit-cover w-100 h-100 d-block" loading="lazy">
 
                                 <div
                                     class="hover-overlay d-flex flex-column position-absolute justify-content-center align-items-center text-center">
-                                    <h3 class="p fw-bolder mb-2">The Call of the Wild</h3>
-                                    <p class="small mb-4 text-truncate-4-lines">
+                                    <h3 class="p fw-bolder mb-2">The Wild</h3>
+                                    <p class="small mb-4 text-truncate-lines px-md-5 px-2" style="--lines: 6;">
                                         Exploring sustainable travel and the rise of eco-friendly adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
                                         the Dolomites.
                                     </p>
                                     <a href="#"
-                                        class="btn border border-1 border-dark fw-semibold shadow-sm px-4 py-2 w-75 w-md-auto">
+                                        class="btn border hover-btn border-1 border-dark fw-semibold shadow-sm px-4 py-2 w-75 w-md-auto">
                                         View Story
                                     </a>
                                 </div>
@@ -1131,45 +1221,50 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-4">
-                        <div class="grid-card-wrapper w-100 overflow-hidden w-100 h-100 d-none d-sm-block">
+                        <div class="grid-card-wrapper w-100 overflow-hidden w-100 h-100">
                             <div class="card-container position-relative w-100">
                                 <img src="images/card.webp" alt="Group of friends hiking in the mountains"
                                     class="card-image object-fit-cover w-100 h-100 d-block" loading="lazy">
 
                                 <div
                                     class="hover-overlay d-flex flex-column position-absolute justify-content-center align-items-center text-center">
-                                    <h3 class="p fw-bolder mb-2">The Call of the Wild</h3>
-                                    <p class="small mb-4 text-truncate-4-lines">
+                                    <h3 class="p fw-bolder mb-2">The Wild</h3>
+                                    <p class="small mb-4 text-truncate-lines px-md-5 px-2" style="--lines: 6;">
                                         Exploring sustainable travel and the rise of eco-friendly adventure tourism in
-                                        the Dolomites. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                                        nisi iure beatae veritatis assumenda impedit aspernatur hic odit quia, et
-                                        officiis cupiditate deleniti quos doloribus, omnis cumque harum ipsa inventore
-                                        accusamus nemo soluta ea voluptatem? Doloremque, officia tempore sunt
-                                        consequatur sapiente ad accusantium iste exercitationem et possimus consequuntur
-                                        illum non impedit magnam amet pariatur voluptas tempora quisquam distinctio
-                                        alias modi culpa excepturi quia nesciunt. Perspiciatis ratione deserunt maxime
-                                        praesentium, blanditiis fugiat incidunt neque qui, obcaecati et culpa impedit
-                                        unde nisi beatae dolorem fuga ullam reprehenderit, in quis animi! Omnis,
-                                        similique earum. Ipsum maiores corrupti, impedit quos at dicta accusamus
-                                        eveniet. In assumenda eaque molestias impedit deserunt. Mollitia beatae sit
-                                        debitis, ipsum eaque atque explicabo ad sint, architecto quia laborum temporibus
-                                        rem aperiam.
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites. Exploring sustainable travel and the rise of eco-friendly
+                                        adventure tourism in
+                                        the Dolomites.
                                     </p>
                                     <a href="#"
-                                        class="btn border border-1 border-dark fw-semibold shadow-sm px-4 py-2 w-75 w-md-auto">
+                                        class="btn border hover-btn border-1 border-dark fw-semibold shadow-sm px-4 py-2 w-75 w-md-auto">
                                         View Story
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
         <!-- partners -->
         <section>
-            <div class="container py-5 py-sm-1">
+            <div class="container py-5">
                 <div class="d-flex justify-content-between align-items-center mb-4 mb-lg-5">
                     <h2 class="fs-3 fs-md-2 fw-semibold">Featured Partners</h2>
                 </div>
@@ -1235,143 +1330,137 @@
                     <div class="slider-track-container d-flex w-100">
                         <div class="slider-track slider-track-ltr testimonial-slider-track d-flex">
                             <ul class="custom-slide-list w-100 list-unstyled d-flex p-0 m-0" id="top-slide-list">
+     <li class="custom-slide flex-shrink-0 position-relative">
+                                    <div
+                                        class="testimonial-card w-100 h-100 p-3 pt-4 user-select-none d-flex flex-column align-items-center text-center rounded-3">
 
-                                <li class="custom-slide flex-shrink-0 position-relative">
-                                    <div
-                                        class="testimonial-card w-100 p-3 pt-5 w-100 user-select-none align-items-center text-center flex-column d-flex rounded-3">
-                                        <div class="card-inner-content">
-                                            <p class="name fw-bold">Andrew Davis</p>
-                                            <div class="rating fs-4 m-1">★★★★☆</div>
-                                            <p class="testimonial-text text-center  lh-sm fs-6 text-truncate-2-lines">
-                                                Lorem
-                                                ipsum
-                                                dolor sit
-                                                amet, consectetur
-                                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                elit.</p>
-                                        </div>
+                                        <p class="name fw-bold mb-1 mt-3">Andrew Davis</p>
+
+                                        <div class="rating fs-4 mb-2">★★★★☆</div>
+
+                                        <p class="testimonial-text mb-0 lh-sm fs-6 text-truncate-lines"
+                                            style="--lines:4;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit.
+                                        </p>
                                     </div>
-                                    <div class="testimonial-img-overlay position-absolute">
-                                        <img src="https://placehold.co/1000x700" alt="Andrew Davis" loading="lazy"
-                                            class="object-fit-cover d-block">
-                                    </div>
-                                </li>
-                                <li class="custom-slide flex-shrink-0 position-relative">
-                                    <div
-                                        class="testimonial-card w-100 p-3 pt-5 w-100 user-select-none align-items-center text-center flex-column d-flex rounded-3 ">
-                                        <div class="card-inner-content">
-                                            <p class="name mt-2 mb-2  fw-bold">Andrew Davis</p>
-                                            <div class="rating fs-4 m-1">★★★★☆</div>
-                                            <p class="testimonial-text text-center  lh-sm fs-6 text-truncate-2-lines">
-                                                Lorem
-                                                ipsum
-                                                dolor sit
-                                                amet, consectetur
-                                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                elit.</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-img-overlay position-absolute">
-                                        <img src="https://placehold.co/1000x700" alt="Andrew Davis" loading="lazy"
-                                            class="object-fit-cover d-block">
-                                    </div>
-                                </li>
-                                <li class="custom-slide flex-shrink-0 position-relative">
-                                    <div
-                                        class="testimonial-card w-100 p-3 pt-5 w-100 user-select-none align-items-center text-center flex-column d-flex rounded-3 ">
-                                        <div class="card-inner-content">
-                                            <p class="name fw-bold">Andrew Davis</p>
-                                            <div class="rating fs-4 m-1carou">★★★★☆</div>
-                                            <p class="testimonial-text text-center  lh-sm fs-6 text-truncate-2-lines">
-                                                Lorem
-                                                ipsum
-                                                dolor sit
-                                                amet, consectetur
-                                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                elit.</p>
-                                        </div>
-                                    </div>
+
                                     <div class="testimonial-img-overlay position-absolute">
                                         <img src="https://i.pravatar.cc/150?img=1" alt="Andrew Davis" loading="lazy"
                                             class="object-fit-cover d-block">
                                     </div>
-                                </li>
-                                <li class="custom-slide flex-shrink-0 position-relative">
+                                </li>     <li class="custom-slide flex-shrink-0 position-relative">
                                     <div
-                                        class="testimonial-card w-100 p-3 pt-5 w-100 user-select-none align-items-center text-center flex-column d-flex rounded-3 ">
-                                        <div class="card-inner-content">
-                                            <p class="name fw-bold">Andrew Davis</p>
-                                            <div class="rating fs-4 m-1">★★★★☆</div>
-                                            <p class="testimonial-text text-center  lh-sm fs-6 text-truncate-2-lines">
-                                                Lorem
-                                                ipsum
-                                                dolor sit
-                                                amet, consectetur
-                                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                elit.</p>
-                                        </div>
+                                        class="testimonial-card w-100 h-100 p-3 pt-4 user-select-none d-flex flex-column align-items-center text-center rounded-3">
+
+                                        <p class="name fw-bold mb-1 mt-3">Andrew Davis</p>
+
+                                        <div class="rating fs-4 mb-2">★★★★☆</div>
+
+                                        <p class="testimonial-text mb-0 lh-sm fs-6 text-truncate-lines"
+                                            style="--lines:4;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit.
+                                        </p>
                                     </div>
+
                                     <div class="testimonial-img-overlay position-absolute">
                                         <img src="https://i.pravatar.cc/150?img=1" alt="Andrew Davis" loading="lazy"
                                             class="object-fit-cover d-block">
                                     </div>
-                                </li>
-                                <li class="custom-slide flex-shrink-0 position-relative">
+                                </li>     <li class="custom-slide flex-shrink-0 position-relative">
                                     <div
-                                        class="testimonial-card w-100 p-3 pt-5 w-100 user-select-none align-items-center text-center flex-column d-flex rounded-3 ">
-                                        <div class="card-inner-content">
-                                            <p class="name fw-bold">Andrew Davis</p>
-                                            <div class="rating fs-4 m-1">★★★★☆</div>
-                                            <p class="testimonial-text text-center  lh-sm fs-6 text-truncate-2-lines">
-                                                Lorem
-                                                ipsum
-                                                dolor sit
-                                                amet, consectetur
-                                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                elit.</p>
-                                        </div>
+                                        class="testimonial-card w-100 h-100 p-3 pt-4 user-select-none d-flex flex-column align-items-center text-center rounded-3">
+
+                                        <p class="name fw-bold mb-1 mt-3">Andrew Davis</p>
+
+                                        <div class="rating fs-4 mb-2">★★★★☆</div>
+
+                                        <p class="testimonial-text mb-0 lh-sm fs-6 text-truncate-lines"
+                                            style="--lines:4;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit.
+                                        </p>
                                     </div>
+
                                     <div class="testimonial-img-overlay position-absolute">
                                         <img src="https://i.pravatar.cc/150?img=1" alt="Andrew Davis" loading="lazy"
                                             class="object-fit-cover d-block">
                                     </div>
-                                </li>
-
-                                <li class="custom-slide flex-shrink-0 position-relative">
+                                </li>     <li class="custom-slide flex-shrink-0 position-relative">
                                     <div
-                                        class="testimonial-card w-100 p-3 pt-5 w-100 user-select-none align-items-center text-center flex-column d-flex rounded-3 ">
-                                        <div class="card-inner-content">
-                                            <p class="name fw-bold">Jane Smith</p>
-                                            <div class="rating fs-4 m-1">★★★★★</div>
-                                            <p class="testimonial-text text-center  lh-sm fs-6 text-truncate-2-lines">
-                                                The
-                                                service
-                                                exceeded all
-                                                my expectations. The
-                                                team was highly professional and efficient.</p>
-                                        </div>
+                                        class="testimonial-card w-100 h-100 p-3 pt-4 user-select-none d-flex flex-column align-items-center text-center rounded-3">
+
+                                        <p class="name fw-bold mb-1 mt-3">Andrew Davis</p>
+
+                                        <div class="rating fs-4 mb-2">★★★★☆</div>
+
+                                        <p class="testimonial-text mb-0 lh-sm fs-6 text-truncate-lines"
+                                            style="--lines:4;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit.
+                                        </p>
                                     </div>
+
                                     <div class="testimonial-img-overlay position-absolute">
-                                        <img src="https://i.pravatar.cc/150?img=5" alt="Jane Smith" loading="lazy"
+                                        <img src="https://i.pravatar.cc/150?img=1" alt="Andrew Davis" loading="lazy"
                                             class="object-fit-cover d-block">
                                     </div>
-                                </li>
-
-                                <li class="custom-slide flex-shrink-0 position-relative">
+                                </li>     <li class="custom-slide flex-shrink-0 position-relative">
                                     <div
-                                        class="testimonial-card w-100 p-3 pt-5 w-100 user-select-none align-items-center text-center flex-column d-flex rounded-3 ">
-                                        <div class="card-inner-content">
-                                            <p class="name fw-bold">Robert Kim</p>
-                                            <div class="rating fs-4 m-1">★★★☆☆</div>
-                                            <p class="testimonial-text text-center  lh-sm fs-6 text-truncate-2-lines">
-                                                Met my
-                                                expectations. A
-                                                solid experience overall,
-                                                but could use minor improvements.</p>
-                                        </div>
+                                        class="testimonial-card w-100 h-100 p-3 pt-4 user-select-none d-flex flex-column align-items-center text-center rounded-3">
+
+                                        <p class="name fw-bold mb-1 mt-3">Andrew Davis</p>
+
+                                        <div class="rating fs-4 mb-2">★★★★☆</div>
+
+                                        <p class="testimonial-text mb-0 lh-sm fs-6 text-truncate-lines"
+                                            style="--lines:4;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit.
+                                        </p>
                                     </div>
+
                                     <div class="testimonial-img-overlay position-absolute">
-                                        <img src="https://i.pravatar.cc/150?img=10" alt="Robert Kim" loading="lazy"
+                                        <img src="https://i.pravatar.cc/150?img=1" alt="Andrew Davis" loading="lazy"
+                                            class="object-fit-cover d-block">
+                                    </div>
+                                </li>     <li class="custom-slide flex-shrink-0 position-relative">
+                                    <div
+                                        class="testimonial-card w-100 h-100 p-3 pt-4 user-select-none d-flex flex-column align-items-center text-center rounded-3">
+
+                                        <p class="name fw-bold mb-1 mt-3">Andrew Davis</p>
+
+                                        <div class="rating fs-4 mb-2">★★★★☆</div>
+
+                                        <p class="testimonial-text mb-0 lh-sm fs-6 text-truncate-lines"
+                                            style="--lines:4;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="testimonial-img-overlay position-absolute">
+                                        <img src="https://i.pravatar.cc/150?img=1" alt="Andrew Davis" loading="lazy"
+                                            class="object-fit-cover d-block">
+                                    </div>
+                                </li>     <li class="custom-slide flex-shrink-0 position-relative">
+                                    <div
+                                        class="testimonial-card w-100 h-100 p-3 pt-4 user-select-none d-flex flex-column align-items-center text-center rounded-3">
+
+                                        <p class="name fw-bold mb-1 mt-3">Andrew Davis</p>
+
+                                        <div class="rating fs-4 mb-2">★★★★☆</div>
+
+                                        <p class="testimonial-text mb-0 lh-sm fs-6 text-truncate-lines"
+                                            style="--lines:4;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="testimonial-img-overlay position-absolute">
+                                        <img src="https://i.pravatar.cc/150?img=1" alt="Andrew Davis" loading="lazy"
                                             class="object-fit-cover d-block">
                                     </div>
                                 </li>
@@ -1387,148 +1476,175 @@
                         <div class="slider-track slider-track-rtl testimonial-slider-track d-flex">
                             <ul class="custom-slide-list list-unstyled w-100 d-flex p-0 m-0" id="bottom-slide-list">
 
-                                <li class="custom-slide flex-shrink-0 position-relative">
+                                  <li class="custom-slide flex-shrink-0 position-relative">
                                     <div
-                                        class="testimonial-card w-100 p-3 pt-5 w-100 user-select-none align-items-center text-center flex-column d-flex rounded-3 ">
-                                        <div class="card-inner-content">
-                                            <p class="name fw-bold">David Lee</p>
-                                            <div class="rating fs-4 m-1">★★★★★</div>
-                                            <p class="testimonial-text text-center  lh-sm fs-6 text-truncate-2-lines"
-                                                class="object-fit-cover d-block">
-                                                Incredible
-                                                results! I
-                                                couldn't be happier with
-                                                the outcome of this service.</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-img-overlay position-absolute">
-                                        <img src="https://placehold.co/1000x700" alt="David Lee" loading="lazy">
-                                    </div>
-                                </li>
-                                <li class="custom-slide flex-shrink-0 position-relative">
-                                    <div
-                                        class="testimonial-card w-100 p-3 pt-5 w-100 user-select-none align-items-center text-center flex-column d-flex rounded-3 ">
-                                        <div class="card-inner-content">
-                                            <p class="name fw-bold">David Lee</p>
-                                            <div class="rating fs-4 m-1">★★★★★</div>
-                                            <p class="testimonial-text text-center  lh-sm fs-6 text-truncate-2-lines">
-                                                Incredible
-                                                results! I
-                                                couldn't be happier with
-                                                the outcome of this service.</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-img-overlay position-absolute">
-                                        <img src="https://placehold.co/1000x700" alt="David Lee" loading="lazy"
-                                            class="object-fit-cover d-block">
-                                    </div>
-                                </li>
-                                <li class="custom-slide flex-shrink-0 position-relative">
-                                    <div
-                                        class="testimonial-card w-100 p-3 pt-5 w-100 user-select-none align-items-center text-center flex-column d-flex rounded-3  rounded-4">
-                                        <div class="card-inner-content">
-                                            <p class="name fw-bold">David Lee</p>
-                                            <div class="rating fs-4 m-1">★★★★★</div>
-                                            <p class="testimonial-text text-center  lh-sm fs-6 text-truncate-2-lines">
-                                                Incredible
-                                                results! I
-                                                couldn't be happier with
-                                                the outcome of this service.</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-img-overlay position-absolute">
-                                        <img src="https://i.pravatar.cc/150?img=20" alt="David Lee" loading="lazy"
-                                            class="object-fit-cover d-block">
-                                    </div>
-                                </li>
-                                <li class="custom-slide flex-shrink-0 position-relative">
-                                    <div
-                                        class="testimonial-card w-100 p-3 pt-5 w-100 user-select-none align-items-center text-center flex-column d-flex rounded-3 ">
-                                        <div class="card-inner-content">
-                                            <p class="name fw-bold">David Lee</p>
-                                            <div class="rating fs-4 m-1">★★★★★</div>
-                                            <p class="testimonial-text text-center  lh-sm fs-6 text-truncate-2-lines">
-                                                Incredible
-                                                results! I
-                                                couldn't be happier with
-                                                the outcome of this service.</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-img-overlay position-absolute">
-                                        <img src="https://i.pravatar.cc/150?img=20" alt="David Lee" loading="lazy"
-                                            class="object-fit-cover d-block">
-                                    </div>
-                                </li>
-                                <li class="custom-slide flex-shrink-0 position-relative">
-                                    <div
-                                        class="testimonial-card w-100 p-3 pt-5 w-100 user-select-none align-items-center text-center flex-column d-flex rounded-3 ">
-                                        <div class="card-inner-content">
-                                            <p class="name fw-bold">David Lee</p>
-                                            <div class="rating fs-4 m-1">★★★★★</div>
-                                            <p class="testimonial-text text-center  lh-sm fs-6 text-truncate-2-lines">
-                                                Incredible
-                                                results! I
-                                                couldn't be happier with
-                                                the outcome of this service.</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-img-overlay position-absolute">
-                                        <img src="https://i.pravatar.cc/150?img=20" alt="David Lee" loading="lazy"
-                                            class="object-fit-cover d-block">
-                                    </div>
-                                </li>
-                                <li class="custom-slide flex-shrink-0 position-relative">
-                                    <div
-                                        class="testimonial-card w-100 p-3 pt-5 w-100 user-select-none align-items-center text-center flex-column d-flex rounded-3 ">
-                                        <div class="card-inner-content">
-                                            <p class="name fw-bold">David Lee</p>
-                                            <div class="rating fs-4 m-1">★★★★★</div>
-                                            <p class="testimonial-text text-center  lh-sm fs-6 text-truncate-2-lines">
-                                                Incredible
-                                                results! I
-                                                couldn't be happier with
-                                                the outcome of this service.</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-img-overlay position-absolute">
-                                        <img src="https://i.pravatar.cc/150?img=20" alt="David Lee" loading="lazy"
-                                            class="object-fit-cover d-block">
-                                    </div>
-                                </li>
+                                        class="testimonial-card w-100 h-100 p-3 pt-4 user-select-none d-flex flex-column align-items-center text-center rounded-3">
 
-                                <li class="custom-slide flex-shrink-0 position-relative">
-                                    <div
-                                        class="testimonial-card w-100 p-3 pt-5 w-100 user-select-none align-items-center text-center flex-column d-flex rounded-3 ">
-                                        <div class="card-inner-content">
-                                            <p class="name fw-bold">Emily Stone</p>
-                                            <div class="rating fs-4 m-1">★★★★☆</div>
-                                            <p class="testimonial-text text-center  lh-sm fs-6 text-truncate-2-lines">A
-                                                professional experience
-                                                from start to finish.
-                                                Highly professional and thorough.</p>
-                                        </div>
+                                        <p class="name fw-bold mb-1 mt-3">Andrew Davis</p>
+
+                                        <div class="rating fs-4 mb-2">★★★★☆</div>
+
+                                        <p class="testimonial-text mb-0 lh-sm fs-6 text-truncate-lines"
+                                            style="--lines:4;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit.
+                                        </p>
                                     </div>
+
                                     <div class="testimonial-img-overlay position-absolute">
-                                        <img src="https://i.pravatar.cc/150?img=25" alt="Emily Stone" loading="lazy"
+                                        <img src="https://i.pravatar.cc/150?img=1" alt="Andrew Davis" loading="lazy"
                                             class="object-fit-cover d-block">
                                     </div>
-                                </li>
-
-                                <li class="custom-slide flex-shrink-0 position-relative">
+                                </li>     <li class="custom-slide flex-shrink-0 position-relative">
                                     <div
-                                        class="testimonial-card w-100 p-3 pt-5 w-100 user-select-none align-items-center text-center flex-column d-flex rounded-3 ">
-                                        <div class="card-inner-content">
-                                            <p class="name fw-bold">Mark Wilson</p>
-                                            <div class="rating fs-4 m-1">★★★★☆</div>
-                                            <p class="testimonial-text text-center  lh-sm fs-6 text-truncate-2-lines">
-                                                Reliable and
-                                                fast
-                                                delivery. Exactly what I was
-                                                looking for in a service provider.</p>
-                                        </div>
+                                        class="testimonial-card w-100 h-100 p-3 pt-4 user-select-none d-flex flex-column align-items-center text-center rounded-3">
+
+                                        <p class="name fw-bold mb-1 mt-3">Andrew Davis</p>
+
+                                        <div class="rating fs-4 mb-2">★★★★☆</div>
+
+                                        <p class="testimonial-text mb-0 lh-sm fs-6 text-truncate-lines"
+                                            style="--lines:4;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit.
+                                        </p>
                                     </div>
+
                                     <div class="testimonial-img-overlay position-absolute">
-                                        <img src="https://i.pravatar.cc/150?img=30" alt="Mark Wilson" loading="lazy"
+                                        <img src="https://i.pravatar.cc/150?img=1" alt="Andrew Davis" loading="lazy"
+                                            class="object-fit-cover d-block">
+                                    </div>
+                                </li>     <li class="custom-slide flex-shrink-0 position-relative">
+                                    <div
+                                        class="testimonial-card w-100 h-100 p-3 pt-4 user-select-none d-flex flex-column align-items-center text-center rounded-3">
+
+                                        <p class="name fw-bold mb-1 mt-3">Andrew Davis</p>
+
+                                        <div class="rating fs-4 mb-2">★★★★☆</div>
+
+                                        <p class="testimonial-text mb-0 lh-sm fs-6 text-truncate-lines"
+                                            style="--lines:4;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="testimonial-img-overlay position-absolute">
+                                        <img src="https://i.pravatar.cc/150?img=1" alt="Andrew Davis" loading="lazy"
+                                            class="object-fit-cover d-block">
+                                    </div>
+                                </li>     <li class="custom-slide flex-shrink-0 position-relative">
+                                    <div
+                                        class="testimonial-card w-100 h-100 p-3 pt-4 user-select-none d-flex flex-column align-items-center text-center rounded-3">
+
+                                        <p class="name fw-bold mb-1 mt-3">Andrew Davis</p>
+
+                                        <div class="rating fs-4 mb-2">★★★★☆</div>
+
+                                        <p class="testimonial-text mb-0 lh-sm fs-6 text-truncate-lines"
+                                            style="--lines:4;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="testimonial-img-overlay position-absolute">
+                                        <img src="https://i.pravatar.cc/150?img=1" alt="Andrew Davis" loading="lazy"
+                                            class="object-fit-cover d-block">
+                                    </div>
+                                </li>     <li class="custom-slide flex-shrink-0 position-relative">
+                                    <div
+                                        class="testimonial-card w-100 h-100 p-3 pt-4 user-select-none d-flex flex-column align-items-center text-center rounded-3">
+
+                                        <p class="name fw-bold mb-1 mt-3">Andrew Davis</p>
+
+                                        <div class="rating fs-4 mb-2">★★★★☆</div>
+
+                                        <p class="testimonial-text mb-0 lh-sm fs-6 text-truncate-lines"
+                                            style="--lines:4;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="testimonial-img-overlay position-absolute">
+                                        <img src="https://i.pravatar.cc/150?img=1" alt="Andrew Davis" loading="lazy"
+                                            class="object-fit-cover d-block">
+                                    </div>
+                                </li>     <li class="custom-slide flex-shrink-0 position-relative">
+                                    <div
+                                        class="testimonial-card w-100 h-100 p-3 pt-4 user-select-none d-flex flex-column align-items-center text-center rounded-3">
+
+                                        <p class="name fw-bold mb-1 mt-3">Andrew Davis</p>
+
+                                        <div class="rating fs-4 mb-2">★★★★☆</div>
+
+                                        <p class="testimonial-text mb-0 lh-sm fs-6 text-truncate-lines"
+                                            style="--lines:4;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="testimonial-img-overlay position-absolute">
+                                        <img src="https://i.pravatar.cc/150?img=1" alt="Andrew Davis" loading="lazy"
+                                            class="object-fit-cover d-block">
+                                    </div>
+                                </li>     <li class="custom-slide flex-shrink-0 position-relative">
+                                    <div
+                                        class="testimonial-card w-100 h-100 p-3 pt-4 user-select-none d-flex flex-column align-items-center text-center rounded-3">
+
+                                        <p class="name fw-bold mb-1 mt-3">Andrew Davis</p>
+
+                                        <div class="rating fs-4 mb-2">★★★★☆</div>
+
+                                        <p class="testimonial-text mb-0 lh-sm fs-6 text-truncate-lines"
+                                            style="--lines:4;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="testimonial-img-overlay position-absolute">
+                                        <img src="https://i.pravatar.cc/150?img=1" alt="Andrew Davis" loading="lazy"
+                                            class="object-fit-cover d-block">
+                                    </div>
+                                </li>     <li class="custom-slide flex-shrink-0 position-relative">
+                                    <div
+                                        class="testimonial-card w-100 h-100 p-3 pt-4 user-select-none d-flex flex-column align-items-center text-center rounded-3">
+
+                                        <p class="name fw-bold mb-1 mt-3">Andrew Davis</p>
+
+                                        <div class="rating fs-4 mb-2">★★★★☆</div>
+
+                                        <p class="testimonial-text mb-0 lh-sm fs-6 text-truncate-lines"
+                                            style="--lines:4;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="testimonial-img-overlay position-absolute">
+                                        <img src="https://i.pravatar.cc/150?img=1" alt="Andrew Davis" loading="lazy"
+                                            class="object-fit-cover d-block">
+                                    </div>
+                                </li>     <li class="custom-slide flex-shrink-0 position-relative">
+                                    <div
+                                        class="testimonial-card w-100 h-100 p-3 pt-4 user-select-none d-flex flex-column align-items-center text-center rounded-3">
+
+                                        <p class="name fw-bold mb-1 mt-3">Andrew Davis</p>
+
+                                        <div class="rating fs-4 mb-2">★★★★☆</div>
+
+                                        <p class="testimonial-text mb-0 lh-sm fs-6 text-truncate-lines"
+                                            style="--lines:4;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="testimonial-img-overlay position-absolute">
+                                        <img src="https://i.pravatar.cc/150?img=1" alt="Andrew Davis" loading="lazy"
                                             class="object-fit-cover d-block">
                                     </div>
                                 </li>
@@ -1540,7 +1656,7 @@
             </div>
         </section>
     </main>
-    <footer class="text-white pt-5" style="background-color: black; border-radius: 0px 0px 40px 40px;">
+    <footer class="text-white pt-5" style="background-color: black;">
         <div class="container-xl">
             <div class="d-lg-none text-center">
                 <div class="row mb-5">
@@ -1786,46 +1902,30 @@
                     </div>
                 </div>
             </div>
-            <div class="px-3 px-lg-1 py-5 border-top mt-5">
-                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center text-white">
-                    <div class="mb-2 mb-lg-0">
-                        &copy; 2025 Copyright, Prose&Pros.com
-                    </div>
-                    <div class="d-flex gap-3 d-sm-block d-none">
-                        <a href="#" class="text-white text-decoration-none">Privacy Policy</a>
-                        <span class="d-none d-lg-inline">|</span>
-                        <a href="#" class="text-white text-decoration-none">Terms & Conditions</a>
-                        <span class="d-none d-lg-inline">|</span>
-                        <a href="#" class="text-white text-decoration-none">Cookies Setting</a>
-                    </div>
-                </div>
+          <div class="border-top border-secondary mt-5 footer-border-full">
+    <div class="container px-3 px-lg-1 py-1">
+        <div
+            class="d-flex flex-column flex-lg-row justify-content-between align-items-center text-white">
+
+            <div class="mb-2 mb-lg-0">
+                &copy; 2025 Copyright, Prose&Pros.com
             </div>
+
+            <div class="d-flex gap-3 d-sm-block d-none">
+                <a href="#" class="text-white text-decoration-none">Privacy Policy</a>
+                <span class="d-none d-lg-inline">|</span>
+                <a href="#" class="text-white text-decoration-none">Terms & Conditions</a>
+                <span class="d-none d-lg-inline">|</span>
+                <a href="#" class="text-white text-decoration-none">Cookies Setting</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
         </div>
     </footer>
-
-    <img src="images/Logo.webp" class="container d-block mx-auto" alt="">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
-
-    <script>
-        const splide = new Splide('#popular-stores', {
-            type: 'loop',
-            perPage: 8,
-            pauseonhover: true,
-            perMove: 1,
-            gap: '15px',
-            fixedWidth: 132,
-            fixedHeight: 100,
-            autoplay: true,
-            interval: 750,
-            speed: 5000,
-            arrows: false,
-            pagination: false,
-            drag: true,
-        }).mount();
-    </script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
 
     <script src="index.js"></script>
 </body>
